@@ -25,7 +25,7 @@
       block
       variant="elevated"
       color="greenDarken"
-      class="py-6 text-h6 font-weight-bold"
+      class="py-6 text-subtitle-1 font-weight-bold"
       >ログイン</v-btn
     >
 
@@ -51,7 +51,7 @@
       block
       variant="elevated"
       color="greenDarken"
-      class="py-6 text-h6 font-weight-bold"
+      class="py-6 text-subtitle-1 font-weight-bold"
       >パスワードを変更してログイン</v-btn
     >
   </div>

@@ -1,5 +1,7 @@
+import { HelloWorld } from '@/components/HelloWorld.vue';
 import { createRouter, createWebHistory } from "vue-router";
 import Login from "@/components/Login.vue";
+import Admin from "@/components/Admin/Admin.vue";
 import HelloWorld from "@/components/HelloWorld.vue";
 
 const routes = [
@@ -11,7 +13,7 @@ const routes = [
   {
     path: "/admin",
     name: "Admin",
-    component: HelloWorld,
+    component: Admin,
   },
   {
     path: "/lavor",
