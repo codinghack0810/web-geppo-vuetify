@@ -16,8 +16,8 @@ import { ThemeDefinition, createVuetify } from "vuetify";
 const customLightTheme: ThemeDefinition = {
   dark: false,
   colors: {
-    greenDarken: "#33691E",
-    greenLighten: "#9ccc65",
+    greenDarken: "#6e906d",
+    greenLighten: "#e9f6e9",
     greenDarken2: "#1B5E20",
     blueDarken: "#01579B",
     blueLighten: "#29B6F6",

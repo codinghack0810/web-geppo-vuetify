@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h4 class="text-center" style="color: #33691e">Web Geppo</h4>
+    <h4 class="text-center" style="color: #6e906d">Web Geppo</h4>
 
     <div class="py-6"></div>
 
@@ -69,9 +69,5 @@ export default {
   min-width: 350px;
   margin: auto;
   margin-top: 5%;
-}
-
-.v-input__icon--prepend-inner {
-  background-color: red;
 }
 </style>
