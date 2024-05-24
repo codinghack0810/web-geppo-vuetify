@@ -1,23 +1,22 @@
-import { HelloWorld } from '@/components/HelloWorld.vue';
 import { createRouter, createWebHistory } from "vue-router";
-import Login from "@/components/Login.vue";
-import Admin from "@/components/Admin/Admin.vue";
-import HelloWorld from "@/components/HelloWorld.vue";
+import Login from "@/pages/Login.vue";
+import Admin from "@/pages/admin/Admin.vue";
+import HelloWorld from "@/pages/HelloWorld.vue";
 
 const routes = [
   {
     path: "/",
-    name: "Login",
     component: Login,
   },
   {
     path: "/admin",
-    name: "Admin",
     component: Admin,
+    children: [
+      { path: "home", component: () => import("@/pages/admin/Home.vue") },
+    ],
   },
   {
     path: "/lavor",
-    name: "Lavor",
     component: HelloWorld,
   },
 ];
