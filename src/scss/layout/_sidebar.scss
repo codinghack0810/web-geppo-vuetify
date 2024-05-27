@@ -18,13 +18,13 @@
     padding: 0;
     .v-list-item--one-line {
       &.v-list-item--active {
-        border-right: 2px solid rgb(var(--v-theme-main));
+        // border-right: 2px solid rgb(var(--v-theme-main));
       }
     }
     .v-list-group {
       .v-list-item--one-line {
         &.v-list-item--active.v-list-item--link {
-          border-right: 2px solid rgb(var(--v-theme-main));
+          // border-right: 2px solid rgb(var(--v-theme-main));
         }
         &.v-list-item--active.v-list-group__header {
           border-right: none;

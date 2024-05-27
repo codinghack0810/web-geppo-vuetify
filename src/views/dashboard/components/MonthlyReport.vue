@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = defineProps({ item: String });
+const props = defineProps({ item: Number });
 const nowDate = new Date();
 const nowMonth = nowDate.getMonth() + 1;
 // const nowYear = nowDate.getYear();
