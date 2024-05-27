@@ -43,22 +43,22 @@ const formattedMonth = String(nowMonth).padStart(2, '0');
         </td>
         <td>
           <v-btn color="secondary" variant="flat" v-if="item.companyWorkSchedule">
-            <v-icon icon="mdi-tray-arrow-down" color="lightsecondary"></v-icon>
+            <v-icon icon="mdi-tray-arrow-down" color="lightsecondary" size="large" class="pr-3"></v-icon>
             自社
           </v-btn>
           <v-btn color="lightsecondary" variant="flat" v-if="!item.companyWorkSchedule">
-            <v-icon icon="mdi-tray-arrow-down" color="secondary"></v-icon>
+            <v-icon icon="mdi-tray-arrow-down" color="borderLight" size="large" class="pr-3"></v-icon>
             <div :style="{ color: 'rgb(var(--v-theme-surface))' }">自社</div>
           </v-btn>
         </td>
         <td>{{ item.updateDate }}</td>
         <td>
           <v-btn color="success" variant="flat" v-if="item.customerWorkSchedule">
-            <v-icon icon="mdi-tray-arrow-down" color="lightsuccess"></v-icon>
+            <v-icon icon="mdi-tray-arrow-down" color="lightsuccess" size="large" class="pr-3"></v-icon>
             客先
           </v-btn>
           <v-btn color="lightsecondary" variant="flat" v-if="!item.customerWorkSchedule">
-            <v-icon icon="mdi-tray-arrow-down" color="secondary"></v-icon>
+            <v-icon icon="mdi-tray-arrow-down" color="borderLight" size="large" class="pr-3"></v-icon>
             <div :style="{ color: 'rgb(var(--v-theme-surface))' }">客先</div>
           </v-btn>
         </td>
