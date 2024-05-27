@@ -1,28 +1,18 @@
 <script setup lang="ts">
-import { shallowRef } from 'vue';
-
-const footerLink = shallowRef([
-  {
-    title: 'About us'
-  },
-  {
-    title: 'Privacy'
-  },
-  {
-    title: 'Terms'
-  }
-]);
+const scrollTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 </script>
 <template>
-  <v-footer class="px-0 footer">
-    <v-row justify="center" no-gutters>
+  <v-footer class="px-0 pb-10 footer">
+    <v-row justify="center" align="center" no-gutters>
       <v-col cols="6">
-        <p class="text-caption mb-0">© All rights reserved</p>
+        <p class="text-h5 mb-0" :style="{ color: 'rgb(var(--v-theme-lightText))' }">Web Geppo &copy; 2024 greenways inc.</p>
       </v-col>
       <v-col class="text-right" cols="6">
-        <a v-for="(item, i) in footerLink" :key="i" class="mx-2 text-caption text-darkText" href="/">
-          {{ item.title }}
-        </a>
+        <v-btn icon color="main" rounded="md" @click="scrollTop">
+          <v-icon icon="mdi-chevron-up" size="x-large"></v-icon>
+        </v-btn>
       </v-col>
     </v-row>
   </v-footer>

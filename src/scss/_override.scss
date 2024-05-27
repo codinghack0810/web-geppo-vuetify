@@ -131,7 +131,7 @@ header {
   }
 }
 
-.notice-list {
+.list {
   .v-list-item {
     display: flex;
     justify-content: space-between;
@@ -152,5 +152,28 @@ header {
     align-self: center;
     grid-area: content;
     overflow: hidden;
+  }
+}
+
+.table {
+  .v-table__wrapper {
+    table {
+      tbody {
+        tr {
+          border: 0;
+          border-top: 2px dotted rgb(var(--v-theme-lightsecondary));
+          border-bottom: 2px dotted rgb(var(--v-theme-lightsecondary));
+          td {
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cardButton {
+  .v-btn {
+    width: 100%;
   }
 }

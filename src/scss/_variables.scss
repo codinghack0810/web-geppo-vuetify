@@ -136,5 +136,8 @@ $theme-colors: (
   success: var(--v-theme-success),
   info: var(--v-theme-info),
   warning: var(--v-theme-warning),
-  error: var(--v-theme-error)
+  error: var(--v-theme-error),
+  main: var(--v-theme-main),
+  lightmain: var(--v-theme-lightmain),
+  darkmain: var(--v-theme-darkmain)
 );
