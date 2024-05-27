@@ -33,7 +33,8 @@ const nowMonth = nowDate.getMonth() + 1;
           <div class="d-flex flex-column gap-3 pb-5">
             <div class="text-center" :style="{ fontSize: '50px' }">0<span class="text-subtitle-1">人</span></div>
             <v-btn color="lightsecondarydisabled" size="large" block flat v-if="item !== nowMonth">
-              <v-icon icon="mdi-alert" size="x-large" color="secondarydisabled"></v-icon>作成中
+              <v-icon icon="mdi-alert" size="x-large" color="secondarydisabled"></v-icon>
+              <div :style="{ color: 'rgb(var(--v-theme-secondary))' }">作成中</div>
             </v-btn>
             <v-btn color="error" size="large" block flat v-else>
               <v-icon icon="mdi-alert" size="x-large" color="lighterror"></v-icon>作成中
@@ -44,7 +45,8 @@ const nowMonth = nowDate.getMonth() + 1;
           <div class="d-flex flex-column gap-3 pb-5">
             <div class="text-center" :style="{ fontSize: '50px' }">0<span class="text-subtitle-1">人</span></div>
             <v-btn color="lightsecondarydisabled" size="large" block flat v-if="item !== nowMonth">
-              <v-icon icon="mdi-arrow-u-right-top" size="x-large" color="secondarydisabled"></v-icon>差戻し中
+              <v-icon icon="mdi-arrow-u-right-top" size="x-large" color="secondarydisabled"></v-icon>
+              <div :style="{ color: 'rgb(var(--v-theme-secondary))' }">差戻し中</div>
             </v-btn>
             <v-btn color="warning" size="large" block flat v-else>
               <v-icon icon="mdi-arrow-u-right-top" size="x-large" color="lightwarning"></v-icon>差戻し中
@@ -55,7 +57,8 @@ const nowMonth = nowDate.getMonth() + 1;
           <div class="d-flex flex-column gap-3 pb-5">
             <div class="text-center" :style="{ fontSize: '50px' }">0<span class="text-subtitle-1">人</span></div>
             <v-btn color="lightsecondarydisabled" variant="outlined" size="large" rounded="0" block v-if="item !== nowMonth">
-              <v-icon icon="mdi-file-document" size="x-large" color="secondarydisabled"></v-icon>承認待ち
+              <v-icon icon="mdi-file-document" size="x-large" color="secondarydisabled"></v-icon>
+              <div :style="{ color: 'rgb(var(--v-theme-secondary))' }">承認待ち</div>
             </v-btn>
             <v-btn color="success" variant="outlined" size="large" rounded="0" block v-else>
               <v-icon icon="mdi-file-document" size="x-large" color="lightsuccess"></v-icon>承認待ち

@@ -9,7 +9,7 @@ const MainRoutes = {
     {
       name: 'Home',
       path: '/admin/home',
-      component: () => import('@/views/admin/home/Home.vue')
+      component: () => import('@/views/admin/home/AdminHome.vue')
     },
     {
       name: 'WorkSchedule',
