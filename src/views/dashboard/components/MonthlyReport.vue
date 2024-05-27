@@ -11,7 +11,7 @@ const nowMonth = nowDate.getMonth() + 1;
 </script>
 <template>
   <v-expansion-panel>
-    <v-expansion-panel-title>{{ item }}月月報</v-expansion-panel-title>
+    <v-expansion-panel-title>{{ props.item }}月月報</v-expansion-panel-title>
     <v-expansion-panel-text>
       <div>
         <span :style="{ color: 'rgb(var(--v-theme-main))' }">提出期限</span>
