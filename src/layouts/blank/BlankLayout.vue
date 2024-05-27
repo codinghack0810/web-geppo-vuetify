@@ -9,5 +9,5 @@
 </template>
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
-import LoaderWrapper from '../dashboard/LoaderWrapper.vue';
+import LoaderWrapper from '../admin/LoaderWrapper.vue';
 </script>

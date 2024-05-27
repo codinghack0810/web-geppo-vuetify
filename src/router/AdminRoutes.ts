@@ -1,20 +1,20 @@
 const MainRoutes = {
-  path: '/main',
+  path: '/admin',
   meta: {
     requiresAuth: true
   },
-  redirect: '/main',
-  component: () => import('@/layouts/dashboard/DashboardLayout.vue'),
+  redirect: '/admin',
+  component: () => import('@/layouts/admin/AdminLayout.vue'),
   children: [
     {
-      name: 'Dashboard',
-      path: '/dashboard',
-      component: () => import('@/views/dashboard/DefaultDashboard.vue')
+      name: 'Home',
+      path: '/admin/home',
+      component: () => import('@/views/admin/home/Home.vue')
     },
     {
-      name: 'Typography',
-      path: '/typography',
-      component: () => import('@/views/typography/TypographyPage.vue')
+      name: 'WorkSchedule',
+      path: '/admin/workschedule',
+      component: () => import('@/views/admin/workschedule/WorkSchedule.vue')
     },
     {
       name: 'Colors',

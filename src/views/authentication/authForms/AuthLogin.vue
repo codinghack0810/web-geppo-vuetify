@@ -9,6 +9,7 @@ import { Form } from 'vee-validate';
 const valid = ref(false);
 const show1 = ref(false);
 const password = ref('admin123');
+const password2 = ref('admin123');
 const username = ref('info@codedthemes.com');
 const passwordRules = ref([
   (v: string) => !!v || 'Password is required',
@@ -87,7 +88,7 @@ function validate(values: any, { setErrors }: any) {
     <div class="mb-6">
       <v-text-field
         aria-label="password"
-        v-model="passwordchange"
+        v-model="password"
         :rules="passwordRules"
         required
         variant="outlined"
@@ -103,7 +104,7 @@ function validate(values: any, { setErrors }: any) {
     <div>
       <v-text-field
         aria-label="password"
-        v-model="passwordchange2"
+        v-model="password2"
         :rules="passwordRules"
         required
         variant="outlined"

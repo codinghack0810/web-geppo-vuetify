@@ -31,7 +31,7 @@ const sidebarItem: menu[] = [
   {
     title: 'HOME',
     icon: 'mdi-home-variant',
-    to: '/dashboard'
+    to: '/admin/home'
   },
   // { header: 'Authentication' },
   // {
@@ -48,7 +48,7 @@ const sidebarItem: menu[] = [
   {
     title: '勤務表',
     icon: 'mdi-file-document-outline',
-    to: '/typography'
+    to: '/admin/workschedule'
   },
   {
     title: '月報管理',
