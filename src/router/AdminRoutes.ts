@@ -17,9 +17,9 @@ const MainRoutes = {
       component: () => import('@/views/admin/workschedule/WorkSchedule.vue')
     },
     {
-      name: 'Colors',
-      path: '/colors',
-      component: () => import('@/views/colors/ColorPage.vue')
+      name: 'MonthlyReport',
+      path: '/admin/monthlyreport',
+      component: () => import('@/views/admin/monthlyreport/MontlyReport.vue')
     },
     {
       name: 'Shadow',

@@ -53,7 +53,7 @@ const sidebarItem: menu[] = [
   {
     title: '月報管理',
     icon: 'mdi-calendar-month',
-    to: '/colors'
+    to: '/admin/monthlyreport'
   },
   {
     title: '勤怠一覧',

@@ -1,0 +1,21 @@
+.monthly-report {
+  tbody {
+    tr {
+      border: 0;
+      border-top: 2px solid rgb(var(--v-theme-borderLight));
+      border-bottom: 2px solid rgb(var(--v-theme-borderLight));
+    }
+    td {
+      text-align: center;
+      padding: 0;
+    }
+  }
+  thead {
+    tr {
+      th {
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+}
