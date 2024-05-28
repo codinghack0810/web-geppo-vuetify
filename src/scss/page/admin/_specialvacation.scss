@@ -1,0 +1,37 @@
+.title {
+  font-size: x-large;
+  color: rgb(var(--v-theme-textmain));
+}
+
+.special-list {
+  tbody {
+    tr {
+      td {
+        padding-left: 0 !important;
+      }
+    }
+  }
+}
+
+input {
+  border: 2px solid rgb(var(--v-theme-borderLight));
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  // width: 100%;
+}
+
+.special-already-list {
+  tbody {
+    tr {
+      border: 0;
+      border-top: 2px solid rgb(var(--v-theme-borderLight));
+      border-bottom: 2px solid rgb(var(--v-theme-borderLight));
+      td {
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
