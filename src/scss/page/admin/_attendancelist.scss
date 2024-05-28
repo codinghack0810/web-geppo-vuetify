@@ -1,0 +1,30 @@
+.attendance-list {
+  thead {
+    tr {
+      th {
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+  tbody {
+    tr {
+      border: 0;
+      border-top: 2px solid rgb(var(--v-theme-borderLight));
+      border-bottom: 2px solid rgb(var(--v-theme-borderLight));
+    }
+    td {
+      // text-align: center;
+      // padding: 0;
+      input {
+        border: 1.5px solid rgb(var(--v-theme-borderLight));
+        border-radius: 5px;
+        outline: none;
+        padding: 5px;
+      }
+      &:hover {
+        outline: none;
+      }
+    }
+  }
+}

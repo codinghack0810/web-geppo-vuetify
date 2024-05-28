@@ -29,9 +29,9 @@ const MainRoutes = {
       ]
     },
     {
-      name: 'Shadow',
-      path: '/shadow',
-      component: () => import('@/views/shadows/ShadowPage.vue')
+      name: 'AttendanceList',
+      path: '/admin/attendancelist',
+      component: () => import('@/views/admin/attendancelist/AttendanceList.vue')
     },
     {
       name: 'Color',

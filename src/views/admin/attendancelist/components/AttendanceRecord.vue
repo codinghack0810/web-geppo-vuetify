@@ -1,0 +1,52 @@
+<script setup>
+import attendanceItem from '../../home/components/attendanceItem';
+import { shallowRef } from 'vue';
+import AttendanceList from '../../home/components/AttendanceList.vue';
+
+const nowDate = new Date();
+const year = nowDate.getFullYear();
+const month = nowDate.getMonth() + 1;
+const formattedMonth = String(month).padStart(2, '0');
+const weekNum = nowDate.getDay();
+const weekDay = ['日', '月', '火', '水', '木', '金', '土'];
+const day = nowDate.getDate();
+
+const attendanceListItems = shallowRef(attendanceItem);
+</script>
+<template>
+  <v-expansion-panel>
+    <v-expansion-panel-title>勤怠状況</v-expansion-panel-title>
+    <v-expansion-panel-text>
+      <!-- <div class="d-inline">
+        <div class="text-h1 font-weight-thin float-left">
+          {{ month }} <span class="text-h4 font-weight-thin">月</span> {{ day }}
+          <span class="text-h4 font-weight-thin">日 ( {{ weekDay[weekNum] }} )</span>
+        </div>
+        <div
+          class="pa-2 float-right"
+          style="border: 1px solid rgb(var(--v-theme-inputBorder)); display: inline; border-radius: 5px; color: black"
+        >
+          {{ year }} / {{ formattedMonth }} / {{ day }} <span class="pl-5"><v-icon icon="mdi-calendar-blank"></v-icon></span>
+        </div>
+      </div> -->
+
+      <v-table class="attendance-list">
+        <thead>
+          <tr>
+            <th class="font-weight-bold">社員名</th>
+            <th class="font-weight-bold">時間</th>
+            <th class="font-weight-bold">申請種別</th>
+            <th class="font-weight-bold">備考</th>
+            <th class="font-weight-bold">送信日時</th>
+          </tr>
+        </thead>
+        <tbody>
+          <template v-for="(item, index) in attendanceListItems" :key="index">
+            <AttendanceList :item="item" />
+          </template>
+        </tbody>
+      </v-table>
+    </v-expansion-panel-text>
+  </v-expansion-panel>
+</template>
+<style></style>
