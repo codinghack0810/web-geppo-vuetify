@@ -13,7 +13,6 @@ const customizer = useCustomizerStore();
 const openEmployee = () => {
   customizer.SET_TITLE('個人月報');
   router.push('/admin/monthlyreport/detail');
-  console.log('個人月報');
 };
 </script>
 <template>
@@ -45,12 +44,7 @@ const openEmployee = () => {
     <tbody>
       <tr :style="{ color: 'rgb(var(--v-theme-lightText))' }" v-for="(item, index) in monthlyReportItems" :key="index">
         <td>
-          <div
-            class="text-decoration-underline text-left"
-            :style="{ color: 'rgb(var(--v-theme-primary))' }"
-            to="/admin/monthlyreport/detail"
-            @click="openEmployee"
-          >
+          <div class="text-decoration-underline text-left" :style="{ color: 'rgb(var(--v-theme-primary))' }" @click="openEmployee">
             {{ item.name }}
           </div>
         </td>

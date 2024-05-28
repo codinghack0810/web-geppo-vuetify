@@ -58,7 +58,7 @@ const sidebarItem: menu[] = [
   {
     title: '勤怠一覧',
     icon: 'mdi-check-outline',
-    to: '/shadow'
+    to: '/admin/attendancelist'
   },
   {
     title: '社員管理',
