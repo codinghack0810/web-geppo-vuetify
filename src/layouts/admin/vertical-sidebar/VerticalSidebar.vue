@@ -10,7 +10,6 @@ import NavItem from './NavItem/NavItem.vue';
 import Logo from '../../logo/LogoDark.vue';
 
 const customizer = useCustomizerStore();
-console.log(customizer.title);
 const sidebarMenu = shallowRef(sidebarItems);
 </script>
 

@@ -19,7 +19,14 @@ const MainRoutes = {
     {
       name: 'MonthlyReport',
       path: '/admin/monthlyreport',
-      component: () => import('@/views/admin/monthlyreport/MontlyReport.vue')
+      component: () => import('@/views/admin/monthlyreport/MonthlyReport.vue'),
+      children: [
+        {
+          name: 'MonthlyReportDetail',
+          path: '/admin/monthlyreport/detail',
+          component: () => import('@/views/admin/monthlyreport/MonthlyReportDetail.vue')
+        }
+      ]
     },
     {
       name: 'Shadow',

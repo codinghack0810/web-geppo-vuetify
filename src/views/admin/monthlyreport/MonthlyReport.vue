@@ -1,10 +1,20 @@
 <script setup lang="ts">
 import monthlyReportItems from './components/monthlyReportItems';
+import { useCustomizerStore } from '@/stores/customizer';
+import { router } from '@/router';
 
 const nowDate = new Date();
 const nowYear = nowDate.getFullYear();
 const nowMonth = nowDate.getMonth() + 1;
 const formattedMonth = String(nowMonth).padStart(2, '0');
+
+const customizer = useCustomizerStore();
+
+const openEmployee = () => {
+  customizer.SET_TITLE('個人月報');
+  router.push('/admin/monthlyreport/detail');
+  console.log('個人月報');
+};
 </script>
 <template>
   <div class="pa-2" style="border: 1px solid rgb(var(--v-theme-inputBorder)); display: inline; border-radius: 5px">
@@ -35,7 +45,14 @@ const formattedMonth = String(nowMonth).padStart(2, '0');
     <tbody>
       <tr :style="{ color: 'rgb(var(--v-theme-lightText))' }" v-for="(item, index) in monthlyReportItems" :key="index">
         <td>
-          <div class="text-decoration-underline text-left" :style="{ color: 'rgb(var(--v-theme-primary))' }">{{ item.name }}</div>
+          <div
+            class="text-decoration-underline text-left"
+            :style="{ color: 'rgb(var(--v-theme-primary))' }"
+            to="/admin/monthlyreport/detail"
+            @click="openEmployee"
+          >
+            {{ item.name }}
+          </div>
         </td>
         <td>
           <v-card color="success" rounded="circle" flat v-if="item.department === 'GW'">
