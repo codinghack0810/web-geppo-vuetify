@@ -34,9 +34,9 @@ const MainRoutes = {
       component: () => import('@/views/admin/attendancelist/AttendanceList.vue')
     },
     {
-      name: 'Color',
-      path: '/icon/ant',
-      component: () => import('@/views/icons/AntDesignIcons.vue')
+      name: 'EmployeeManagement',
+      path: '/admin/employeemanagement',
+      component: () => import('@/views/admin/employeemanagement/EmployeeManagemant.vue')
     },
     {
       name: 'other',

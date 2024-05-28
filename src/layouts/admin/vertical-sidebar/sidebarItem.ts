@@ -63,7 +63,7 @@ const sidebarItem: menu[] = [
   {
     title: '社員管理',
     icon: 'mdi-account-multiple',
-    to: '/icon/ant'
+    to: '/admin/employeemanagement'
   },
   // { header: 'Support' },
   {

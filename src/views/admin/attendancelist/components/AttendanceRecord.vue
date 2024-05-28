@@ -17,18 +17,16 @@ const attendanceListItems = shallowRef(attendanceItem);
   <v-expansion-panel>
     <v-expansion-panel-title>勤怠状況</v-expansion-panel-title>
     <v-expansion-panel-text>
-      <!-- <div class="d-inline">
-        <div class="text-h1 font-weight-thin float-left">
-          {{ month }} <span class="text-h4 font-weight-thin">月</span> {{ day }}
-          <span class="text-h4 font-weight-thin">日 ( {{ weekDay[weekNum] }} )</span>
-        </div>
-        <div
-          class="pa-2 float-right"
-          style="border: 1px solid rgb(var(--v-theme-inputBorder)); display: inline; border-radius: 5px; color: black"
-        >
-          {{ year }} / {{ formattedMonth }} / {{ day }} <span class="pl-5"><v-icon icon="mdi-calendar-blank"></v-icon></span>
-        </div>
-      </div> -->
+      <div class="text-h1 font-weight-thin float-left">
+        {{ month }} <span class="text-h4 font-weight-thin">月</span> {{ day }}
+        <span class="text-h4 font-weight-thin">日 ( {{ weekDay[weekNum] }} )</span>
+      </div>
+      <div
+        class="pa-2 float-right"
+        style="border: 1px solid rgb(var(--v-theme-inputBorder)); display: inline; border-radius: 5px; color: black"
+      >
+        {{ year }} / {{ formattedMonth }} / {{ day }} <span class="pl-5"><v-icon icon="mdi-calendar-blank"></v-icon></span>
+      </div>
 
       <v-table class="attendance-list">
         <thead>
