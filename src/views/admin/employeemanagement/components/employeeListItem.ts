@@ -1,4 +1,4 @@
-import type { employeeItem } from '@/types/employeeItem';
+import type { employeeItem } from '@/types/employeeItem.ts';
 
 const employeeList: employeeItem[] = [
   {
@@ -94,8 +94,8 @@ const employeeList: employeeItem[] = [
   {
     name: '社員氏名2',
     department: 'WT',
-    braunchOffice: '営業',
-    section: 'IT',
+    braunchOffice: '東京',
+    section: '営業',
     entryDate: '2024/05/30',
     job: '営業',
     age: 30,

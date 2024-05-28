@@ -69,7 +69,7 @@ const sidebarItem: menu[] = [
   {
     title: '特別休暇管理',
     icon: 'mdi-file-document-edit-outline',
-    to: '/sample-page'
+    to: '/admin/specialvacation'
   },
   {
     title: 'ログアウト',

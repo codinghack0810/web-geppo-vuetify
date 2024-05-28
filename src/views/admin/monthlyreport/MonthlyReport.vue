@@ -49,11 +49,11 @@ const openEmployee = () => {
           </div>
         </td>
         <td>
-          <v-card color="success" rounded="circle" flat v-if="item.department === 'GW'">
+          <v-card color="darkmain" rounded="circle" flat v-if="item.department === 'GW'">
             <v-card-text>{{ item.department }}</v-card-text>
           </v-card>
-          <v-card color="warning" rounded="circle" flat v-if="item.department === 'WT'">
-            <v-card-text>{{ item.department }}</v-card-text>
+          <v-card color="accent" rounded="circle" flat v-if="item.department === 'WT'">
+            <v-card-text :style="{ color: 'rgb(var(--v-theme-surface))' }">{{ item.department }}</v-card-text>
           </v-card>
         </td>
         <td>

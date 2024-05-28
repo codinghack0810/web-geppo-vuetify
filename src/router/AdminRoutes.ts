@@ -36,12 +36,12 @@ const MainRoutes = {
     {
       name: 'EmployeeManagement',
       path: '/admin/employeemanagement',
-      component: () => import('@/views/admin/employeemanagement/EmployeeManagemant.vue')
+      component: () => import('@/views/admin/employeemanagement/EmployeeManage.vue')
     },
     {
-      name: 'other',
-      path: '/sample-page',
-      component: () => import('@/views/StarterPage.vue')
+      name: 'SpecialVacation',
+      path: '/admin/specialvacation',
+      component: () => import('@/views/admin/specialvacation/SpecialVacation.vue')
     }
   ]
 };
