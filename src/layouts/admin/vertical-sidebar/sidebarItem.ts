@@ -27,24 +27,11 @@ export interface menu {
 }
 
 const sidebarItem: menu[] = [
-  // { header: 'Navigation' },
   {
     title: 'HOME',
     icon: 'mdi-home-variant',
     to: '/admin/home'
   },
-  // { header: 'Authentication' },
-  // {
-  //   title: 'Login',
-  //   icon: LoginOutlined,
-  //   to: '/auth/login'
-  // },
-  // {
-  //   title: 'Register',
-  //   icon: ProfileOutlined,
-  //   to: '/auth/register'
-  // },
-  // { header: 'Utilities' },
   {
     title: '勤務表',
     icon: 'mdi-file-document-outline',
@@ -65,7 +52,6 @@ const sidebarItem: menu[] = [
     icon: 'mdi-account-multiple',
     to: '/admin/employeemanagement'
   },
-  // { header: 'Support' },
   {
     title: '特別休暇管理',
     icon: 'mdi-file-document-edit-outline',
@@ -76,15 +62,6 @@ const sidebarItem: menu[] = [
     icon: 'mdi-logout',
     to: '/auth/login'
   },
-  // {
-  //   title: 'Documentation',
-  //   icon: QuestionOutlined,
-  //   to: 'https://codedthemes.gitbook.io/mantis-vuetify/',
-  //   type: 'external',
-  //   chip: 'gitbook',
-  //   chipColor: 'secondary',
-  //   chipVariant: 'flat'
-  // }
   {
     title: 'ポータルサイト',
     icon: 'mdi-web',

@@ -30,21 +30,11 @@ const sidebarMenu = shallowRef(sidebarItems);
       <v-list aria-busy="true" aria-label="menu list">
         <!---Menu Loop -->
         <template v-for="(item, i) in sidebarMenu" :key="i">
-          <!---Item Sub Header -->
-          <!-- <NavGroup :item="item" v-if="item.header" :key="item.title" /> -->
-          <!---Item Divider -->
-          <!-- <v-divider class="my-3" v-else-if="item.divider" /> -->
-          <!---If Has Child -->
-          <NavCollapse class="leftPadding" :item="item" :level="0" v-if="item.children" />
-          <!---Single Item-->
-          <NavItem :item="item" v-if="item.title != 'ログアウト'" @click.stop="customizer.SET_TITLE(item.title)" />
+          <NavItem :item="item" v-if="item.title != 'ログアウト'" @click.stop="customizer.SET_TITLE(item.title || '')" />
           <NavItem :item="item" v-else @click.stop="customizer.SET_TITLE('HOME')" />
           <!---End Single Item-->
         </template>
       </v-list>
-      <!-- <div class="pa-4">
-        <ExtraBox />
-      </div> -->
     </perfect-scrollbar>
   </v-navigation-drawer>
 </template>
