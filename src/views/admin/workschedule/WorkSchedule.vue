@@ -34,11 +34,11 @@ const formattedMonth = String(nowMonth).padStart(2, '0');
           <div class="text-decoration-underline" :style="{ color: 'rgb(var(--v-theme-primary))' }">{{ item.name }}</div>
         </td>
         <td class="text-center">
-          <v-btn rounded="full" color="success" icon flat v-if="item.department === 'GW'">
+          <v-btn rounded="full" color="darkmain" icon flat v-if="item.department === 'GW'">
             {{ item.department }}
           </v-btn>
-          <v-btn rounded="full" color="warning" icon flat v-if="item.department === 'WT'">
-            {{ item.department }}
+          <v-btn rounded="full" color="accent" icon flat v-if="item.department === 'WT'">
+            <div style="color: white">{{ item.department }}</div>
           </v-btn>
         </td>
         <td>

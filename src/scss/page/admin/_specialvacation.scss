@@ -8,18 +8,18 @@
     tr {
       td {
         padding-left: 0 !important;
+        input {
+          border: 2px solid rgb(var(--v-theme-borderLight));
+          border-radius: 5px;
+          outline: none;
+          padding: 5px;
+          // width: 100%;
+        }
       }
     }
   }
 }
 
-input {
-  border: 2px solid rgb(var(--v-theme-borderLight));
-  border-radius: 5px;
-  outline: none;
-  padding: 5px;
-  // width: 100%;
-}
 
 .special-already-list {
   tbody {
@@ -29,6 +29,10 @@ input {
       border-bottom: 2px solid rgb(var(--v-theme-borderLight));
       td {
         input {
+          border: 2px solid rgb(var(--v-theme-borderLight));
+          border-radius: 5px;
+          outline: none;
+          padding: 5px;
           width: 100%;
         }
       }

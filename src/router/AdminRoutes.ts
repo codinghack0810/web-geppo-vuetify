@@ -1,4 +1,4 @@
-const MainRoutes = {
+const AdminRoutes = {
   path: '/admin',
   meta: {
     requiresAuth: true
@@ -8,42 +8,47 @@ const MainRoutes = {
   children: [
     {
       name: 'Home',
-      path: '/admin/home',
+      path: 'home',
       component: () => import('@/views/admin/home/AdminHome.vue')
     },
     {
       name: 'WorkSchedule',
-      path: '/admin/workschedule',
+      path: 'workschedule',
       component: () => import('@/views/admin/workschedule/WorkSchedule.vue')
     },
     {
       name: 'MonthlyReport',
-      path: '/admin/monthlyreport',
-      component: () => import('@/views/admin/monthlyreport/MonthlyReport.vue'),
-      children: [
-        {
-          name: 'MonthlyReportDetail',
-          path: '/admin/monthlyreport/detail',
-          component: () => import('@/views/admin/monthlyreport/MonthlyReportDetail.vue')
-        }
-      ]
+      path: 'monthlyreport',
+      component: () => import('@/views/admin/monthlyreport/MonthlyReport.vue')
+      // children: [
+      //   {
+      //     name: 'MonthlyReportDetail',
+      //     path: 'detail',
+      //     component: () => import('@/views/admin/monthlyreport/MonthlyReportDetail.vue')
+      //   }
+      // ]
+    },
+    {
+      name: 'MonthlyReportDetail',
+      path: 'monthlyreport/detail',
+      component: () => import('@/views/admin/monthlyreport/MonthlyReportDetail.vue')
     },
     {
       name: 'AttendanceList',
-      path: '/admin/attendancelist',
+      path: 'attendancelist',
       component: () => import('@/views/admin/attendancelist/AttendanceList.vue')
     },
     {
       name: 'EmployeeManagement',
-      path: '/admin/employeemanagement',
+      path: 'employeemanagement',
       component: () => import('@/views/admin/employeemanagement/EmployeeManage.vue')
     },
     {
       name: 'SpecialVacation',
-      path: '/admin/specialvacation',
+      path: 'specialvacation',
       component: () => import('@/views/admin/specialvacation/SpecialVacation.vue')
     }
   ]
 };
 
-export default MainRoutes;
+export default AdminRoutes;

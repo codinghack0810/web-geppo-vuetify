@@ -12,7 +12,7 @@ const customizer = useCustomizerStore();
 </script>
 
 <template>
-  <v-app-bar elevation="0" height="60" class="border-0">
+  <v-app-bar elevation="0" height="100" class="border-0">
     <v-btn
       class="text-secondary mr-3"
       color="darkText"
