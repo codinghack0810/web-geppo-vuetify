@@ -61,19 +61,24 @@
         tr {
           th {
             padding: 0;
+            color: rgb(var(--v-theme-lightText))
           }
         }
       }
-      tbody{
-        tr{
-          td{
+      tbody {
+        tr {
+          td {
             padding: 0;
             margin: 1px;
-            input{
-              margin:1px;
-              padding: 0 5px;
-              border: 1px solid rgb(var(--v-theme-borderLight));
-              border-radius: 5px
+            input {
+              border: 1.5px solid rgb(var(--v-theme-borderLight));
+              border-radius: 5px;
+              font-size: 14px;
+              outline: none;
+              padding: 5px;              
+            }
+            &:hover {
+              outline: none;
             }
           }
         }

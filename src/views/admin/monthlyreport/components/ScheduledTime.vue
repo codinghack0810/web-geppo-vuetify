@@ -29,7 +29,7 @@ const scheduledTime = shallowRef([
       <v-table class="scheduled-time">
         <thead>
           <tr>
-            <th></th>
+            <th style="width: 35px"></th>
             <th>開始時刻</th>
             <th>終了時刻</th>
             <th>休憩時間</th>
