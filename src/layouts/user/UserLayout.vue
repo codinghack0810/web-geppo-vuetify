@@ -21,7 +21,7 @@ import FooterPanel from '../admin/footer/FooterPanel.vue';
             <RouterView />
           </div>
         </v-container>
-        <v-container class="pt-0">
+        <v-container class="pt-0 hide">
           <div>
             <FooterPanel />
           </div>
