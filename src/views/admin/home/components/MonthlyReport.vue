@@ -2,12 +2,6 @@
 const props = defineProps({ item: Number });
 const nowDate = new Date();
 const nowMonth = nowDate.getMonth() + 1;
-// const nowYear = nowDate.getYear();
-// const formattedDate = nowDate.toLocaleDateString('en-US', {
-//   year: 'numeric',
-//   month: '2-digit',
-//   day: '2-digit'
-// });
 </script>
 <template>
   <v-expansion-panel>

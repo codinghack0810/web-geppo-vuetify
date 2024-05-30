@@ -90,9 +90,9 @@ header {
 // accordion page css
 .v-expansion-panel {
   border: 1px solid rgb(var(--v-theme-borderLight));
-  &:not(:first-child) {
+  // &:not(:first-child) {
     // margin-top: -1px;
-  }
+  // }
   .v-expansion-panel-text__wrapper {
     border-top: 1px solid rgb(var(--v-theme-borderLight));
     padding: 16px 24px;

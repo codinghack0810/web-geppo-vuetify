@@ -3,7 +3,7 @@ const AdminRoutes = {
   meta: {
     requiresAuth: true
   },
-  redirect: '/admin',
+  redirect: '/admin/home',
   component: () => import('@/layouts/admin/AdminLayout.vue'),
   children: [
     {
@@ -19,20 +19,24 @@ const AdminRoutes = {
     {
       name: 'MonthlyReport',
       path: 'monthlyreport',
-      component: () => import('@/views/admin/monthlyreport/MonthlyReport.vue')
-      // children: [
-      //   {
-      //     name: 'MonthlyReportDetail',
-      //     path: 'detail',
-      //     component: () => import('@/views/admin/monthlyreport/MonthlyReportDetail.vue')
-      //   }
-      // ]
+      component: () => import('@/views/admin/monthlyreport/MonthlyReport.vue'),
+      children: [
+        {
+          path: '/',
+          component: () => import('@/views/admin/monthlyreport/MonthlyReport.vue')
+        },
+        {
+          name: 'MonthlyReportDetail',
+          path: 'detail',
+          component: () => import('@/views/admin/monthlyreport/MonthlyReportDetail.vue')
+        }
+      ]
     },
-    {
-      name: 'MonthlyReportDetail',
-      path: 'monthlyreport/detail',
-      component: () => import('@/views/admin/monthlyreport/MonthlyReportDetail.vue')
-    },
+    // {
+    //   name: 'MonthlyReportDetail',
+    //   path: 'monthlyreport/detail',
+    //   component: () => import('@/views/admin/monthlyreport/MonthlyReportDetail.vue')
+    // },
     {
       name: 'AttendanceList',
       path: 'attendancelist',
