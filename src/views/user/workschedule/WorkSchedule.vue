@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import workScheduleItems from './components/workScheduleItems';
 import { shallowRef } from 'vue';
 const nowDate = new Date();
 const nowYear = nowDate.getFullYear();
