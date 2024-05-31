@@ -1,20 +1,12 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
+import fileListItems from './components/fileListItems';
 const nowDate = new Date();
 const nowYear = nowDate.getFullYear();
 const nowMonth = nowDate.getMonth() + 1;
 const formattedMonth = String(nowMonth).padStart(2, '0');
 
-const fileList = shallowRef([
-  {
-    name: '202405_緑道太郎',
-    type: 'pdf'
-  },
-  {
-    name: '2202405_サテライト_緑道太郎',
-    type: 'pdf'
-  }
-]);
+const fileList = shallowRef(fileListItems);
 </script>
 <template>
   <div class="pa-2" style="border: 1px solid rgb(var(--v-theme-inputBorder)); display: inline; border-radius: 5px">
@@ -54,7 +46,7 @@ const fileList = shallowRef([
     </v-col>
     <v-col cols="12">
       <p>勤務表に関する連絡事項</p>
-      <v-textarea v-model="text" variant="outlined"></v-textarea>
+      <v-textarea variant="outlined"></v-textarea>
       <div class="text-center">
         <div class="text-subtitle-2">{{ nowYear }}年 {{ nowMonth }}月分</div>
         <v-btn class="px-10" color="warning" size="large">

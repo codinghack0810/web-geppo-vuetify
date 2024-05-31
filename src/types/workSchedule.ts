@@ -1,4 +1,4 @@
-export type workSchedule = {
+export interface workSchedule {
   name?: string;
   department?: string;
   companyWorkSchedule?: boolean;
@@ -6,4 +6,4 @@ export type workSchedule = {
   customerWorkSchedule?: boolean;
   latestSubmissionDate?: string;
   notice?: string;
-};
+}

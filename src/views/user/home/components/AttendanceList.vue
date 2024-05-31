@@ -4,27 +4,27 @@ const props = defineProps({ item: Object });
 
 <template>
   <tr class="font-weight-medium">
-    <td>{{ item.date }}</td>
+    <td>{{ $t(props.item.date) }}</td>
     <td>
       <div class="font-weight-bold" :style="{ color: 'rgb(var(--v-theme-primary))' }" v-if="item.type === '通常休暇'">
-        {{ item.type }}
+        {{ $t(props.item.type) }}
       </div>
       <div class="font-weight-bold" :style="{ color: 'rgb(var(--v-theme-success))' }" v-if="item.type.includes('特別休暇')">
-        {{ item.type }}
+        {{ $t(props.item.type) }}
       </div>
       <div class="font-weight-bold" :style="{ color: 'rgb(var(--v-theme-warning))' }" v-if="item.type === '欠勤'">
-        {{ item.type }}
+        {{ $t(props.item.type) }}
       </div>
       <div class="font-weight-bold" :style="{ color: 'rgb(var(--v-theme-error))' }" v-if="item.type === '休日出勤'">
-        {{ item.type }}
+        {{ $t(props.item.type) }}
       </div>
       <div class="font-weight-bold" :style="{ color: 'rgb(var(--v-theme-darkText))' }" v-if="item.type === '遅刻'">
-        {{ item.type }}
+        {{ $t(props.item.type) }}
       </div>
     </td>
-    <td class="px-5">{{ item.reason }}</td>
+    <td class="px-5">{{ $t(props.item.reason) }}</td>
     <td class="font-weight-thin" :style="{ color: 'rgb(var(--v-theme-lightText))' }">
-      {{ item.sendDate }}
+      {{ $t(props.item.sendDate) }}
     </td>
     <td>
       <div class="my-1">
@@ -45,11 +45,15 @@ const props = defineProps({ item: Object });
       </div>
     </td>
     <td>
-      <div class="font-weight-bold" :style="{ color: 'rgb(var(--v-theme-success))' }" v-if="item.status === '承認'">{{ item.status }}</div>
-      <div class="font-weight-bold" :style="{ color: 'rgb(var(--v-theme-warning))' }" v-if="item.status === '未承認'">
-        {{ item.status }}
+      <div class="font-weight-bold" :style="{ color: 'rgb(var(--v-theme-success))' }" v-if="item.status === '承認'">
+        {{ $t(props.item.status) }}
       </div>
-      <div class="font-weight-bold" :style="{ color: 'rgb(var(--v-theme-error))' }" v-if="item.status === '却下'">{{ item.status }}</div>
+      <div class="font-weight-bold" :style="{ color: 'rgb(var(--v-theme-warning))' }" v-if="item.status === '未承認'">
+        {{ $t(props.item.status) }}
+      </div>
+      <div class="font-weight-bold" :style="{ color: 'rgb(var(--v-theme-error))' }" v-if="item.status === '却下'">
+        {{ $t(props.item.status) }}
+      </div>
     </td>
   </tr>
 </template>

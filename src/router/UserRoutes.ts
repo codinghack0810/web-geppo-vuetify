@@ -19,24 +19,12 @@ const UserRoutes = {
     {
       name: 'MonthlyReport',
       path: 'monthlyreport',
-      component: () => import('@/views/user/monthlyreport/MonthlyReport.vue')
-      // children: [
-      //   {
-      //     name: 'MonthlyReportDetail',
-      //     path: 'detail',
-      //     component: () => import('@/views/user/monthlyreport/MonthlyReportDetail.vue')
-      //   }
-      // ]
-    },
-    {
-      name: 'MonthlyReportDetail',
-      path: 'monthlyreport/detail',
       component: () => import('@/views/user/monthlyreport/MonthlyReportDetail.vue')
     },
     {
       name: 'AttendanceList',
       path: 'attendancelist',
-      component: () => import('@/views/user/attendancelist/AttendanceList.vue')
+      component: () => import('@/views/user/attendanceRequest/AttendanceRequest.vue')
     },
     {
       name: 'EmployeeManagement',
