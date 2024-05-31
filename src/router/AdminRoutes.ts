@@ -19,7 +19,7 @@ const AdminRoutes = {
     {
       name: 'MonthlyReport',
       path: 'monthlyreport',
-      component: () => import('@/views/admin/monthlyreport/MonthlyReport.vue'),
+      component: () => import('@/views/admin/monthlyreport/MonthlyReport.vue')
       // children: [
       //   {
       //     path: '/',
