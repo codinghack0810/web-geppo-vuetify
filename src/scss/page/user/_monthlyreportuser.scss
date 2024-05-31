@@ -21,7 +21,7 @@
 }
 
 .borderCell {
-  border: 1px solid rgb(var(--v-theme-inputBorder));
+  border: 1px solid rgb(var(--v-theme-lightsecondarydisabled));
   padding: 8px 5px;
   margin: 1px;
   border-radius: 5px;
@@ -178,6 +178,10 @@
 
 .v-combobox,
 .v-checkbox {
+  border: 0;
+  .v-input__control {
+    border: 0;
+  }
   .v-input__details {
     display: none;
   }
