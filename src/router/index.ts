@@ -25,7 +25,7 @@ export const router = createRouter({
       component: () => import('@/views/pages/underconstruction/UnderConstruction.vue')
     },
     AdminRoutes,
-    // UserRoutes,
+    UserRoutes,
     AuthRoutes
   ]
 });

@@ -32,9 +32,9 @@ const UserRoutes = {
       component: () => import('@/views/user/weeklyreport/WeeklyReport.vue')
     },
     {
-      name: 'SpecialVacation',
-      path: 'specialvacation',
-      component: () => import('@/views/user/specialvacation/SpecialVacation.vue')
+      name: 'PersonalSetting',
+      path: 'personalsetting',
+      component: () => import('@/views/user/personalsetting/PersonalSetting.vue')
     }
   ]
 };

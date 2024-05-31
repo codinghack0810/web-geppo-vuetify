@@ -5,11 +5,7 @@ import WorkScheduleTime from './components/WorkScheduleTime.vue';
 import VacationDeductionHoliday from './components/VacationDeductionHoliday.vue';
 import SubScription from './components/SubScription.vue';
 import TrafficReport from './components/TrafficReport.vue';
-
-const nowDate = new Date();
-const nowYear = nowDate.getFullYear();
-const nowMonth = nowDate.getMonth() + 1;
-const formattedMonth = String(nowMonth).padStart(2, '0');
+import { nowYear, nowMonth, formattedMonth } from '@/utils/date';
 
 const panel = [0, 1, 2, 3, 4, 5];
 </script>
