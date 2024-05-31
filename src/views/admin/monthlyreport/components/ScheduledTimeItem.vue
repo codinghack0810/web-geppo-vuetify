@@ -1,38 +1,40 @@
 <template lang="">
-  <tr>
-    <td>
-      <!-- <v-text-field variant="outlined" :value="index + 1"></v-text-field> -->
-      <input type="text" class="text-center" style="width: 30px" name="" id="" :value="index + 1" />
-    </td>
-    <td>
-      <!-- <v-text-field variant="outlined" :value="item.startTime"></v-text-field> -->
-      <input type="text" style="width: 98%" name="" id="" :value="item.startTime" />
-    </td>
-    <td>
-      <!-- <v-textarea variant="outlined" :value="item.endTime"></v-textarea> -->
-      <input type="text" style="width: 98%" name="" id="" :value="item.endTime" />
-    </td>
-    <td>
-      <!-- <v-text-field variant="outlined" :value="item.restTime"></v-text-field> -->
-      <input type="text" style="width: 98%" name="" id="" :value="item.restTime" />
-    </td>
-    <td>
-      <!-- <v-text-field variant="outlined" :value="item.workTime"></v-text-field> -->
-      <input type="text" style="width: 98%" name="" id="" :value="item.workTime" />
-    </td>
-    <td>
-      <!-- <v-text-field variant="outlined" :value="item.note"></v-text-field> -->
-      <input type="text" name="" id="" :value="item.note" />
-      <span class="px-3">
-        <v-btn color="secondarydisabled" variant="flat">
-          <v-icon icon="mdi-delete-forever" color="lightsecondarydisabled" size="large"></v-icon>
-          <div :style="{ color: 'rgb(var(--v-theme-surface))' }">削除</div>
-        </v-btn>
-      </span>
-    </td>
-  </tr>
+    <div class="d-flex justify-between border">
+        <div
+            style="
+                width: 40px;
+                text-align: center;
+                color: rgb(var(--v-theme-secondary));
+                background-color: rgb(var(--v-theme-lightsecondarydisabled));
+            "
+        >
+            {{ index + 1 }}
+        </div>
+        <div style="width: 10%">
+            {{ $t(props.item.startTime) }}
+            <v-icon icon="mdi-clock-outline" class="float-right" size="small"></v-icon>
+        </div>
+        <div style="width: 10%">
+            {{ $t(props.item.endTime) }}
+            <v-icon icon="mdi-clock-outline" class="float-right" size="small"></v-icon>
+        </div>
+        <div style="width: 10%">
+            {{ $t(props.item.restTime) }}
+            <v-icon icon="mdi-clock-outline" class="float-right" size="small"></v-icon>
+        </div>
+        <div style="width: 8%; color: rgb(var(--v-theme-secondary)); background-color: rgb(var(--v-theme-lightsecondarydisabled))">
+            {{ $t(props.item.workTime) }}
+        </div>
+        <div style="width: calc(62% - 120px)">{{ $t(props.item.note) }}</div>
+        <div style="width: 80px; padding: 0; border: 0">
+            <v-btn color="secondary" v-if="index === total - 1">
+                <v-icon color="lightsecondary" icon="mdi-delete-forever" size="large"></v-icon>
+                削除
+            </v-btn>
+        </div>
+    </div>
 </template>
 <script setup>
-const props = defineProps({ item: Object, index: Number });
+const props = defineProps({ item: Object, total: Number, index: Number });
 </script>
 <style lang=""></style>

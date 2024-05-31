@@ -45,6 +45,7 @@
 
 .message-box {
   width: 100%;
+  float: right;
   textarea {
     border: 1px solid rgb(var(--v-theme-borderLight));
     border-radius: 5px;
@@ -53,6 +54,7 @@
     float: right;
     width: 70%;
     height: 100px;
+    margin: 0 10px;
   }
 }
 

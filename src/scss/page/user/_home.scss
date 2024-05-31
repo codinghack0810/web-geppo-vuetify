@@ -1,0 +1,13 @@
+.notice {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 600px) {
+    .notice {
+        flex-direction: column;
+    }
+    .notice-date {
+        color: rgb(var(--v-theme-secondary));
+    }
+}
