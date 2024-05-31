@@ -13,7 +13,7 @@
       <div>現在の工程</div>
       <v-row>
         <v-col cols="12" md="2" sm="4">
-          <v-btn>要件定義</v-btn>
+          <v-btn color="">要件定義</v-btn>
         </v-col>
       </v-row>
     </v-expandion-panel-text>
