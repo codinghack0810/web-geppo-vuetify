@@ -1,0 +1,26 @@
+.flex-row-column {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .flex-row-column {
+        flex-direction: column;
+    }
+    .input-password{
+        .v-text-field{
+            width: 100%
+        }
+    }
+}
+
+.v-checkbox {
+    color: rgb(var(--v-theme-darkText));
+}
+
+.input-password{
+    .v-text-field{
+        width: 25%
+    }
+}
