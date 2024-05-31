@@ -27,9 +27,9 @@ const UserRoutes = {
       component: () => import('@/views/user/attendancelist/AttendanceList.vue')
     },
     {
-      name: 'EmployeeManagement',
-      path: 'employeemanagement',
-      component: () => import('@/views/user/employeemanagement/EmployeeManage.vue')
+      name: 'WeeklyReport',
+      path: 'weeklyreport',
+      component: () => import('@/views/user/weeklyreport/WeeklyReport.vue')
     },
     {
       name: 'SpecialVacation',

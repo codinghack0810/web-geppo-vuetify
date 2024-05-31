@@ -4,9 +4,9 @@ import attendanceItems from './attendanceItem';
 import AttendanceList from './AttendanceList.vue';
 
 const props = defineProps({ item: Object });
-const nowMonth = props.item.getMonth() + 1;
-const nowDay = props.item.getDay();
-const nowDate = props.item.getDate();
+const nowMonth = props.item?.getMonth() + 1;
+const nowDay = props.item?.getDay();
+const nowDate = props.item?.getDate();
 
 const weekDay = ['日', '月', '火', '水', '木', '金', '土'];
 

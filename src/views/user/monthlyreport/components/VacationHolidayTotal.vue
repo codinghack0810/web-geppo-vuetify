@@ -1,4 +1,5 @@
-<template lang="">
+<script setup></script>
+<template>
   <v-table class="vacation-list">
     <tr>
       <th>有休残日数（前年）</th>
@@ -41,5 +42,4 @@
     </tr>
   </v-table>
 </template>
-<script></script>
-<style lang=""></style>
+<style></style>
