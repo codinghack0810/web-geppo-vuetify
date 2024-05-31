@@ -24,7 +24,7 @@ const UserRoutes = {
     {
       name: 'AttendanceList',
       path: 'attendancelist',
-      component: () => import('@/views/user/attendanceRequest/AttendanceRequest.vue')
+      component: () => import('@/views/user/attendancelist/AttendanceList.vue')
     },
     {
       name: 'EmployeeManagement',
