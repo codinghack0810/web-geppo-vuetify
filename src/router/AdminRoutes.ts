@@ -20,23 +20,23 @@ const AdminRoutes = {
       name: 'MonthlyReport',
       path: 'monthlyreport',
       component: () => import('@/views/admin/monthlyreport/MonthlyReport.vue'),
-      children: [
-        {
-          path: '/',
-          component: () => import('@/views/admin/monthlyreport/MonthlyReport.vue')
-        },
-        {
-          name: 'MonthlyReportDetail',
-          path: 'detail',
-          component: () => import('@/views/admin/monthlyreport/MonthlyReportDetail.vue')
-        }
-      ]
+      // children: [
+      //   {
+      //     path: '/',
+      //     component: () => import('@/views/admin/monthlyreport/MonthlyReport.vue')
+      //   },
+      //   {
+      //     name: 'MonthlyReportDetail',
+      //     path: 'detail',
+      //     component: () => import('@/views/admin/monthlyreport/MonthlyReportDetail.vue')
+      //   }
+      // ]
     },
-    // {
-    //   name: 'MonthlyReportDetail',
-    //   path: 'monthlyreport/detail',
-    //   component: () => import('@/views/admin/monthlyreport/MonthlyReportDetail.vue')
-    // },
+    {
+      name: 'MonthlyReportDetail',
+      path: 'monthlyreport/detail',
+      component: () => import('@/views/user/monthlyreport/MonthlyReportDetail.vue')
+    },
     {
       name: 'AttendanceList',
       path: 'attendancelist',
