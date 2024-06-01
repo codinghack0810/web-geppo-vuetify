@@ -56,6 +56,10 @@ const AdminRoutes = {
             name: 'SpecialVacation',
             path: '/admin/specialvacation',
             component: () => import('@/views/admin/specialvacation/SpecialVacation.vue')
+        },
+        {
+            path: '/notice',
+            component: () => import('@/views/notice/NoticeEdit.vue')
         }
     ]
 };

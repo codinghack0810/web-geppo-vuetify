@@ -12,22 +12,22 @@ const customizer = useCustomizerStore();
 </script>
 
 <template>
-  <v-app-bar elevation="0" height="100" class="border-0">
-    <v-btn
-      class="text-secondary mr-3"
-      color="darkText"
-      icon
-      rounded="sm"
-      variant="text"
-      @click.stop="customizer.SET_MINI_SIDEBAR(!customizer.mini_sidebar)"
-      size="small"
-    >
-      <!-- <MenuFoldOutlined :style="{ fontSize: '16px' }" /> -->
-      <v-icon class="text-h2">mdi-menu</v-icon>
-    </v-btn>
+    <v-app-bar elevation="0" height="100" class="border-0">
+        <v-btn
+            class="text-secondary mr-3"
+            color="darkText"
+            icon
+            rounded="sm"
+            variant="text"
+            @click.stop="customizer.SET_MINI_SIDEBAR(!customizer.mini_sidebar)"
+            size="small"
+        >
+            <!-- <MenuFoldOutlined :style="{ fontSize: '16px' }" /> -->
+            <v-icon class="text-h2">mdi-menu</v-icon>
+        </v-btn>
 
-    <!-- search mobile -->
-    <!-- <v-menu :close-on-content-click="false" class="hidden-lg-and-up" offset="10, 0">
+        <!-- search mobile -->
+        <!-- <v-menu :close-on-content-click="false" class="hidden-lg-and-up" offset="10, 0">
       <template v-slot:activator="{ props }">
         <v-btn
           class="hidden-lg-and-up text-secondary ml-1"
@@ -50,29 +50,29 @@ const customizer = useCustomizerStore();
       </v-sheet>
     </v-menu> -->
 
-    <!-- ---------------------------------------------- -->
-    <!-- Search part -->
-    <!-- ---------------------------------------------- -->
-    <!-- <v-sheet class="d-none d-lg-block" width="250">
+        <!-- ---------------------------------------------- -->
+        <!-- Search part -->
+        <!-- ---------------------------------------------- -->
+        <!-- <v-sheet class="d-none d-lg-block" width="250">
       <Searchbar />
     </v-sheet> -->
 
-    <!---/Search part -->
+        <!---/Search part -->
 
-    <v-spacer />
-    <!-- ---------------------------------------------- -->
-    <!---right part -->
-    <!-- ---------------------------------------------- -->
+        <v-spacer />
+        <!-- ---------------------------------------------- -->
+        <!---right part -->
+        <!-- ---------------------------------------------- -->
 
-    <!-- TITLE -->
-    <v-app-bar-title v-model="customizer.title" :style="{ color: 'rgb(var(--v-theme-textmain))' }" class="text-h3 font-weight-medium">{{
-      customizer.title
-    }}</v-app-bar-title>
+        <!-- TITLE -->
+        <v-app-bar-title v-model="customizer.title" :style="{ color: 'rgb(var(--v-theme-textmain))' }" class="text-h3 font-weight-medium">{{
+            customizer.title
+        }}</v-app-bar-title>
 
-    <!-- ---------------------------------------------- -->
-    <!-- Github -->
-    <!-- ---------------------------------------------- -->
-    <!-- <v-btn
+        <!-- ---------------------------------------------- -->
+        <!-- Github -->
+        <!-- ---------------------------------------------- -->
+        <!-- <v-btn
       icon
       class="text-secondary hidden-sm-and-down d-flex"
       color="darkText"
@@ -84,15 +84,15 @@ const customizer = useCustomizerStore();
       <GithubOutlined :style="{ fontSize: '16px' }" />
     </v-btn> -->
 
-    <!-- ---------------------------------------------- -->
-    <!-- Notification -->
-    <!-- ---------------------------------------------- -->
-    <NotificationDD />
+        <!-- ---------------------------------------------- -->
+        <!-- Notification -->
+        <!-- ---------------------------------------------- -->
+        <NotificationDD />
 
-    <!-- ---------------------------------------------- -->
-    <!-- User Profile -->
-    <!-- ---------------------------------------------- -->
-    <!-- <v-menu :close-on-content-click="false" offset="8, 0">
+        <!-- ---------------------------------------------- -->
+        <!-- User Profile -->
+        <!-- ---------------------------------------------- -->
+        <!-- <v-menu :close-on-content-click="false" offset="8, 0">
       <template v-slot:activator="{ props }">
         <v-btn class="profileBtn" variant="text" rounded="sm" v-bind="props">
           <div class="d-flex align-center">
@@ -107,5 +107,5 @@ const customizer = useCustomizerStore();
         <ProfileDD />
       </v-sheet>
     </v-menu> -->
-  </v-app-bar>
+    </v-app-bar>
 </template>
