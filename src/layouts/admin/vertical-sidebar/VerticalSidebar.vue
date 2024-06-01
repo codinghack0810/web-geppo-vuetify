@@ -43,15 +43,6 @@ const sidebarMenu = shallowRef(sidebarItems);
                     <!---End Single Item-->
                 </template>
             </v-list>
-
-            <template v-slot:append>
-                <template v-for="(item, i) in sidebarMenu" :key="i">
-                    <NavItem
-                        :item="item"
-                        v-if="(item.title ?? '').includes('ポータルサイト') || (item.title ?? '').includes('操作ヘルプ')"
-                    />
-                </template>
-            </template>
         </perfect-scrollbar>
     </v-navigation-drawer>
 </template>

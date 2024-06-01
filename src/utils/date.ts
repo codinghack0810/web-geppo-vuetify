@@ -10,4 +10,4 @@ const formattedMonth = String(nowMonth).padStart(2, '0');
 const formattedDay = String(nowDay).padStart(2, '0');
 const formattedWeek = WeekDay[nowWeek];
 
-export { nowYear, nowMonth, nowDay, nowWeek, formattedMonth, formattedDay, formattedWeek };
+export { nowYear, nowMonth, nowDay, formattedMonth, formattedDay, formattedWeek };
