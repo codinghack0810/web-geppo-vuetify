@@ -8,24 +8,52 @@ const enrollmentStatusList = shallowRef(enrollmentStatusItems);
     <v-expansion-panel>
         <v-expansion-panel-title> 登録情報 </v-expansion-panel-title>
         <v-expansion-panel-text>
-            <div>社員番号</div>
-            <v-text-field width="25%" variant="outlined"></v-text-field>
-            <div>名字</div>
-            <v-text-field width="25%" variant="outlined"></v-text-field>
-            <div>名前</div>
-            <v-text-field width="25%" variant="outlined"></v-text-field>
-            <div>ミョウジ</div>
-            <v-text-field width="25%" variant="outlined"></v-text-field>
-            <div>ナマエ</div>
-            <v-text-field width="25%" variant="outlined"></v-text-field>
-            <div>入社日</div>
-            <v-text-field width="25%" variant="outlined"></v-text-field>
-            <div>勤続</div>
-            <div class="disabled-text-field" style="width: 25%">321543216</div>
-            <div>生年月日</div>
-            <v-text-field width="25%" variant="outlined"></v-text-field>
-            <div>年齢</div>
-            <div class="disabled-text-field" style="width: 25%">321543216</div>
+            <v-row>
+                <v-col cols="12" md="3">
+                    <div>社員番号</div>
+                    <v-text-field variant="outlined"></v-text-field>
+                </v-col>
+            </v-row>
+            <v-row>
+                <v-col cols="12" md="3">
+                    <div>名字</div>
+                    <v-text-field variant="outlined"></v-text-field>
+                </v-col>
+                <v-col cols="12" md="3">
+                    <div>名前</div>
+                    <v-text-field variant="outlined"></v-text-field>
+                </v-col>
+            </v-row>
+            <v-row>
+                <v-col cols="12" md="3">
+                    <div>ミョウジ</div>
+                    <v-text-field variant="outlined"></v-text-field>
+                </v-col>
+                <v-col cols="12" md="3">
+                    <div>ナマエ</div>
+                    <v-text-field variant="outlined"></v-text-field>
+                </v-col>
+            </v-row>
+            <v-row>
+                <v-col cols="12" md="3">
+                    <div>入社日</div>
+                    <v-text-field variant="outlined"></v-text-field>
+                </v-col>
+                <v-col cols="12" md="3">
+                    <div>勤続</div>
+                    <div class="disabled-text-field">321543216</div>
+                </v-col>
+            </v-row>
+            <v-row>
+                <v-col cols="12" md="3">
+                    <div>生年月日</div>
+                    <v-text-field variant="outlined"></v-text-field>
+                </v-col>
+                <v-col cols="12" md="3">
+                    <div>年齢</div>
+                    <div class="disabled-text-field">321543216</div>
+                </v-col>
+            </v-row>
             <div>メールアドレス</div>
             <v-text-field width="50%" variant="outlined"></v-text-field>
 
@@ -34,14 +62,26 @@ const enrollmentStatusList = shallowRef(enrollmentStatusItems);
                 <v-divider color="textmain"></v-divider>
             </div>
 
-            <div>会社</div>
-            <v-combobox width="25%" variant="outlined" :items="['グリーンウェイズ', 'グリーンウェイズ', 'グリーンウェイズ']"></v-combobox>
-            <div>支社</div>
-            <v-combobox width="25%" variant="outlined" :items="['東京', '東京', '東京']"></v-combobox>
-            <div>部署</div>
-            <v-combobox width="25%" variant="outlined" :items="['教育事業部', '教育事業部', '教育事業部']"></v-combobox>
-            <div>職種</div>
-            <v-combobox width="25%" variant="outlined" :items="['エンジニア', 'エンジニア', 'エンジニア']"></v-combobox>
+            <v-row>
+                <v-col cols="12" md="3">
+                    <div>会社</div>
+                    <v-combobox variant="outlined" :items="['グリーンウェイズ', 'グリーンウェイズ', 'グリーンウェイズ']"></v-combobox>
+                </v-col>
+                <v-col cols="12" md="3">
+                    <div>支社</div>
+                    <v-combobox variant="outlined" :items="['東京', '東京', '東京']"></v-combobox>
+                </v-col>
+                <v-col cols="12" md="3">
+                    <div>部署</div>
+                    <v-combobox variant="outlined" :items="['教育事業部', '教育事業部', '教育事業部']"></v-combobox>
+                </v-col>
+            </v-row>
+            <v-row>
+                <v-col cols="12" md="3">
+                    <div>職種</div>
+                    <v-combobox variant="outlined" :items="['エンジニア', 'エンジニア', 'エンジニア']"></v-combobox>
+                </v-col>
+            </v-row>
 
             <div class="d-flex align-center my-8">
                 <div class="text-h5" style="color: rgb(var(--v-theme-textmain)); width: 100px">在籍状況</div>
