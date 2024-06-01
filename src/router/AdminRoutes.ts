@@ -48,6 +48,11 @@ const AdminRoutes = {
             component: () => import('@/views/admin/employeemanagement/EmployeeManage.vue')
         },
         {
+            name: 'EmployeeManagementDetail',
+            path: '/admin/employeemanagement/detail',
+            component: () => import('@/views/admin/employeemanagement/EmployeeManageDetail.vue')
+        },
+        {
             name: 'SpecialVacation',
             path: '/admin/specialvacation',
             component: () => import('@/views/admin/specialvacation/SpecialVacation.vue')

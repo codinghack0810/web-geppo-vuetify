@@ -1,0 +1,8 @@
+.disabled-text-field {
+    color: rgb(var(--v-theme-secondary));
+    background-color: rgb(var(--v-theme-lightsecondarydisabled));
+	border: 1px solid rgb(var(--v-theme-secondarydisabled));
+    padding: 8px 5px;
+    margin: 1px;
+    border-radius: 5px;
+}

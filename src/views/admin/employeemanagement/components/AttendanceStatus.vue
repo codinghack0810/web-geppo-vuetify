@@ -7,7 +7,7 @@ const attendanceListItems = shallowRef(attendanceItems);
 </script>
 <template>
     <v-expansion-panel>
-        <v-expansion-panel-title>勤怠申請一覧</v-expansion-panel-title>
+        <v-expansion-panel-title>申請状況</v-expansion-panel-title>
         <v-expansion-panel-text>
             <v-card variant="outlined" rounded="lg">
                 <v-card-text>
