@@ -80,7 +80,7 @@ const panel = [0, 1, 2, 3, 4, 5];
         <v-col>
             <div class="text-center">
                 <v-btn style="width: 200px" color="warning" size="large">
-                    <v-icon class="pr-5" color="lightwarning" icon="mdi-check-circle" size="x-large"></v-icon>
+                    <v-icon class="pr-5" color="lightwarning" icon="mdi-arrow-u-right-top" size="x-large"></v-icon>
                     差戻し
                 </v-btn>
                 <div class="py-5"></div>

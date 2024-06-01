@@ -27,9 +27,9 @@
         </div>
         <div style="width: calc(62% - 120px)">{{ $t(props.item.note) }}</div>
         <div style="width: 80px; padding: 0; border: 0">
-            <v-btn color="secondary" v-if="index === total - 1">
-                <v-icon color="lightsecondary" icon="mdi-delete-forever" size="large"></v-icon>
-                削除
+            <v-btn color="secondarydisabled" v-if="index === total - 1" flat>
+                <v-icon color="lightsecondarydisabled" icon="mdi-delete-forever" size="large"></v-icon>
+                <span style="color: rgb(var(--v-theme-surface))">削除</span>
             </v-btn>
         </div>
     </div>

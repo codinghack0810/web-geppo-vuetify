@@ -38,9 +38,9 @@ const method = ref(props.item.method);
             <div v-else>{{ item.note }}</div>
         </div>
         <div>
-            <v-btn color="secondary" class="float-right" style="width: 80px" flat>
-                <v-icon icon="mdi-delete-forever" color="lightsecondary" size="large"></v-icon>
-                削除
+            <v-btn color="secondarydisabled" class="float-right" style="width: 80px" flat>
+                <v-icon icon="mdi-delete-forever" color="lightsecondarydisabled" size="large"></v-icon>
+                <span style="color: rgb(var(--v-theme-surface))">削除</span>
             </v-btn>
         </div>
     </div>

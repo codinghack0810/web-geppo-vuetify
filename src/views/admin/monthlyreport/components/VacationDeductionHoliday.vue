@@ -21,7 +21,7 @@ const attendanceListItems = shallowRef(attendanceItems);
                     </v-table>
                 </v-card-text>
             </v-card>
-            <div class="py-2"></div>
+            <div class="py-5"></div>
             <VacationHolidayTotal />
         </v-expansion-panel-text>
     </v-expansion-panel>
