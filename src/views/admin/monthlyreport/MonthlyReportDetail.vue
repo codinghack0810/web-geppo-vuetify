@@ -62,12 +62,12 @@ const panel = [0, 1, 2, 3, 4, 5];
         </v-col>
         <v-divider thickness="2" :style="{ 'border-color': 'rgb(var(--v-theme-textmain))' }"></v-divider>
         <v-expansion-panels v-model="panel" flat multiple>
-            <!-- <ScheduledTime /> -->
-            <!-- <OfficeWorkSchedule /> -->
-            <!-- <WorkScheduleTime /> -->
-            <!-- <VacationDeductionHoliday /> -->
-            <!-- <SubScription /> -->
-            <!-- <TrafficReport /> -->
+            <ScheduledTime />
+            <OfficeWorkSchedule />
+            <WorkScheduleTime />
+            <VacationDeductionHoliday />
+            <SubScription />
+            <TrafficReport />
         </v-expansion-panels>
         <v-col cols="12" class="pa-0">
             <div class="py-2"></div>
