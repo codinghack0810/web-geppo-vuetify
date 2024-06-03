@@ -1,6 +1,6 @@
 <script setup>
 const props = defineProps({ item: Object, total: Number, index: Number });
-import { nowWeek } from '@/utils/date';
+import { nowWeek } from '@/utils/date.ts';
 </script>
 <template>
     <div class="d-flex justify-between">

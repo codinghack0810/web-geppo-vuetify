@@ -2,7 +2,7 @@
 import attendanceItem from '../../home/components/attendanceItem';
 import { shallowRef } from 'vue';
 import AttendanceList from '../../home/components/AttendanceList.vue';
-import { nowYear, nowMonth, nowDay, formattedMonth, formattedDay, formattedWeek } from '@/utils/date';
+import { nowYear, nowMonth, nowDay, formattedMonth, formattedDay, formattedWeek } from '@/utils/date.ts';
 
 const attendanceListItems = shallowRef(attendanceItem);
 </script>
