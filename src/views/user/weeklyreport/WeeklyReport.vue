@@ -8,7 +8,7 @@ import ProjectImprove from './components/ProjectImprove.vue';
 import TheOther from './components/TheOther.vue';
 import { nowYear, nowMonth, nowDay } from '@/utils/date';
 
-const panel = ref([0, 1, 2, 3]);
+const panel = ref([0, 1, 2, 3, 4, 5]);
 </script>
 <template>
     <v-row>

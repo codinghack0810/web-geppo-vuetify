@@ -2,7 +2,7 @@
 <template>
     <v-expansion-panel>
         <v-expansion-panel-title>今週の状況</v-expansion-panel-title>
-        <v-expandion-panel-text>
+        <v-expansion-panel-text>
             <div>週の残業時間</div>
             <v-row>
                 <v-col cols="12">
@@ -51,7 +51,7 @@
             <v-text-field variant="outlined" placeholder="例）AWS, GCP等"></v-text-field>
             <div>ツール</div>
             <v-text-field variant="outlined" placeholder="例）PowerPlatform, AdobeXD, Figma, IntelliJ, Eclipse, VSCode等"></v-text-field>
-        </v-expandion-panel-text>
+        </v-expansion-panel-text>
     </v-expansion-panel>
 </template>
 <style></style>
