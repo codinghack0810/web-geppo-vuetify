@@ -6,7 +6,7 @@ const customizer = useCustomizerStore();
 
 const openNotice = () => {
     customizer.SET_TITLE('お知らせ');
-    router.push('/notice');
+    router.push('/admin/notice');
 };
 </script>
 
