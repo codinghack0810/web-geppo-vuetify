@@ -30,7 +30,7 @@ function validate(values: any, { setErrors }: any) {
     <router-link to="/auth/register" class="text-primary text-decoration-none">Don't Have an account?</router-link>
   </div> -->
     <Form @submit="validate" class="loginForm" v-slot="{ errors, isSubmitting }">
-        <div class="text-h4 text-center" :style="{ color: 'rgb(var(--v-theme-lightText))' }">ログイン</div>
+        <div class="text-h4 text-center lightText-color">ログイン</div>
         <div class="py-4"></div>
         <div class="mb-6">
             <v-text-field
@@ -83,7 +83,7 @@ function validate(values: any, { setErrors }: any) {
     <div class="py-3"></div>
 
     <Form @submit="validate" class="mt-7 loginForm" v-slot="{ errors, isSubmitting }">
-        <div class="text-h5 text-center" :style="{ color: 'rgb(var(--v-theme-lightText))' }">パスワードを忘れた場合はこちら</div>
+        <div class="text-h5 text-center lightText-color">パスワードを忘れた場合はこちら</div>
         <!-- <div class="py-1"></div> -->
         <div class="mb-6">
             <v-text-field

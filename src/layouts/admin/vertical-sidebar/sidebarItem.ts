@@ -73,7 +73,7 @@ const sidebarItem: menu[] = [
     {
         title: 'ポータルサイト',
         icon: 'mdi-web',
-        to: '/forum'
+        to: '/portalsite'
     },
     {
         title: '操作ヘルプ',

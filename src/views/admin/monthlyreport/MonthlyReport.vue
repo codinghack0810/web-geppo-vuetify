@@ -43,13 +43,9 @@ const openEmployee = () => {
             </tr>
         </thead>
         <tbody>
-            <tr :style="{ color: 'rgb(var(--v-theme-lightText))' }" v-for="(item, index) in monthlyReportItems" :key="index">
+            <tr class="lightText-color" v-for="(item, index) in monthlyReportItems" :key="index">
                 <td>
-                    <div
-                        class="text-decoration-underline text-left"
-                        :style="{ color: 'rgb(var(--v-theme-primary))' }"
-                        @click="openEmployee"
-                    >
+                    <div class="text-decoration-underline text-left primary-color" @click="openEmployee">
                         {{ item.name }}
                     </div>
                 </td>
@@ -58,7 +54,7 @@ const openEmployee = () => {
                         <v-card-text>{{ item.department }}</v-card-text>
                     </v-card>
                     <v-card color="accent" rounded="circle" flat v-if="item.department === 'WT'">
-                        <v-card-text :style="{ color: 'rgb(var(--v-theme-surface))' }">{{ item.department }}</v-card-text>
+                        <v-card-text class="surface-color">{{ item.department }}</v-card-text>
                     </v-card>
                 </td>
                 <td>

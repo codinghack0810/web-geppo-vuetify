@@ -4,7 +4,6 @@ import subScriptionItems from './subScriptionItems.ts';
 import SubScriptionItem from './SubScriptionItem.vue';
 
 const subScriptionList = shallowRef(subScriptionItems);
-console.log(subScriptionList);
 </script>
 <template lang="">
     <v-expansion-panel>
@@ -13,7 +12,7 @@ console.log(subScriptionList);
             <v-row>
                 <v-col cols="12">
                     <v-icon icon="mdi-help-circle" color="lightsecondary"></v-icon>
-                    <v-link class="text-decoration-underline" :style="{ color: 'rgb(var(--v-theme-primary))' }">定期代の申請ルール</v-link>
+                    <v-link class="text-decoration-underline primary-color">定期代の申請ルール</v-link>
                 </v-col>
             </v-row>
             <div class="py-2"></div>

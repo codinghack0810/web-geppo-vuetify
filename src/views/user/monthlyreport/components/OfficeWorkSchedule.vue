@@ -6,9 +6,7 @@
                 <template v-for="item in fileList" :key="item.name">
                     <v-list-item>
                         <v-icon icon="mdi-paperclip" color="lightsecondary"></v-icon>
-                        <span class="text-decoration-underline text-subtitle-2 px-5" :style="{ color: 'rgb(var(--v-theme-primary))' }"
-                            >{{ item.name }}.{{ item.type }}</span
-                        >
+                        <span class="text-decoration-underline text-subtitle-2 px-5 primary-color">{{ item.name }}.{{ item.type }}</span>
                         <v-btn color="secondary" rounded="lg" size="small" icon>
                             <v-icon icon="mdi-delete-forever" color="lightsecondary" size="large"></v-icon>
                         </v-btn>

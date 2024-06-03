@@ -16,12 +16,6 @@ const panel = [0, 1, 2, 3, 4, 5];
             <div class="pa-2 float-left" style="border: 1px solid rgb(var(--v-theme-inputBorder)); display: inline; border-radius: 5px">
                 {{ nowYear }}年 {{ formattedMonth }}月 <span class="pl-5"><v-icon icon="mdi-calendar-blank"></v-icon></span>
             </div>
-            <!-- <div class="float-right d-flex align-center">
-                <v-icon icon="mdi-account" color="lightsecondary" size="large"></v-icon>
-                <div class="text-decoration-underline ml-2 text-h4 font-weight-medium" :style="{ color: 'rgb(var(--v-theme-primary))' }">
-                    名字名前
-                </div>
-            </div> -->
         </v-col>
         <v-col cols="12">
             <div class="float-left">
@@ -66,7 +60,7 @@ const panel = [0, 1, 2, 3, 4, 5];
                 </v-col>
             </v-row>
         </v-col>
-        <v-divider thickness="2" :style="{ 'border-color': 'rgb(var(--v-theme-textmain))' }"></v-divider>
+        <v-divider thickness="2" class="textmain-brColor"></v-divider>
         <v-expansion-panels v-model="panel" flat multiple>
             <ScheduledTime />
             <OfficeWorkSchedule />

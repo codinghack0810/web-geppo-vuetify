@@ -3,10 +3,7 @@ import { shallowRef } from 'vue';
 import { useCustomizerStore } from '../../../stores/customizer';
 import sidebarItems from './sidebarItem';
 
-// import NavGroup from './NavGroup/NavGroup.vue';
 import NavItem from './NavItem/NavItem.vue';
-// import NavCollapse from './NavCollapse/NavCollapse.vue';
-// import ExtraBox from './extrabox/ExtraBox.vue';
 import Logo from '../../logo/LogoDark.vue';
 
 const customizer = useCustomizerStore();
@@ -26,7 +23,7 @@ const sidebarMenu = shallowRef(sidebarItems);
         <div class="pa-5 text-center">
             <Logo />
         </div>
-        <div class="pa-5" :style="{ backgroundColor: 'rgb(var(--v-theme-main)' }">
+        <div class="admin-panel pa-5">
             <div class="text-white font-weight-bold">管理者</div>
             <div class="py-1"></div>
             <div class="text-h4 text-white font-weight-regular">名字名前</div>
@@ -46,3 +43,9 @@ const sidebarMenu = shallowRef(sidebarItems);
         </perfect-scrollbar>
     </v-navigation-drawer>
 </template>
+
+<style scoped>
+.admin-panel {
+    background-color: rgb(var(--v-theme-main));
+}
+</style>

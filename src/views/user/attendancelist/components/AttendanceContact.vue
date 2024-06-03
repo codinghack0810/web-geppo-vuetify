@@ -1,11 +1,6 @@
 <script setup>
-const nowDate = new Date();
-const year = nowDate.getFullYear();
-const month = nowDate.getMonth() + 1;
-const formattedMonth = String(month).padStart(2, '0');
-const weekNum = nowDate.getDay();
-const weekDay = ['日', '月', '火', '水', '木', '金', '土'];
-const day = nowDate.getDate();
+import { nowMonth, formattedWeek } from '@/utils/date.ts';
+
 </script>
 <template lang="">
     <v-expansion-panel>
@@ -15,7 +10,7 @@ const day = nowDate.getDate();
                 <v-col cols="12" md="10" sm="12"> </v-col>
                 <v-col cols="12" md="2" sm="12">
                     <v-icon icon="mdi-help-circle" color="lightsecondary"></v-icon>
-                    <span class="text-decoration-underline" :style="{ color: 'rgb(var(--v-theme-primary))' }">勤怠申請ルール</span>
+                    <span class="text-decoration-underline primary-color">勤怠申請ルール</span>
                 </v-col>
             </v-row>
             <v-row>
@@ -42,7 +37,7 @@ const day = nowDate.getDate();
                                 background-color: rgb(var(--v-theme-lightsecondarydisabled));
                             "
                         >
-                            {{ weekDay[weekNum] }}
+                            {{ formattedWeek }}
                         </div>
                         <v-btn color="secondary" class="mx-1 align-self-center">
                             <v-icon icon="mdi-checkbox-multiple-blank-outline" color="lightsecondary"></v-icon>

@@ -16,7 +16,7 @@ const attendanceListItems = shallowRef(attendanceItems);
     <v-expansion-panel>
         <v-expansion-panel-title>勤怠状況</v-expansion-panel-title>
         <v-expansion-panel-text>
-            <div class="text-center text-h1 font-weight-thin" :style="{ color: 'rgb(var(--v-theme-lightsecondary))' }">
+            <div class="text-center text-h1 font-weight-thin ligthsecondary-color">
                 {{ nowMonth }}<span class="text-h4"> 月 </span>{{ nowDate }}<span class="text-h4"> 日 ( {{ weekDay[nowDay] }} )</span>
             </div>
             <v-card variant="outlined" rounded="lg">

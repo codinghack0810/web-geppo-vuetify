@@ -1,16 +1,16 @@
 <script setup>
 import { router } from '@/router';
 
-const props = defineProps({ item: Object });
+const { item } = defineProps({ item: Object });
 
 const openInfo = () => {
     router.push('/admin/employeemanagement/detail');
 };
 </script>
 <template>
-    <tr :style="{ color: 'rgb(var(--v-theme-lightText))' }">
+    <tr class="lightText-color">
         <td>
-            <div class="text-decoration-underline text-left" :style="{ color: 'rgb(var(--v-theme-primary))' }" @click="openInfo">
+            <div class="text-decoration-underline text-left primary-color" @click="openInfo">
                 {{ item.name }}
             </div>
         </td>
@@ -19,7 +19,7 @@ const openInfo = () => {
                 <v-card-text>{{ item.department }}</v-card-text>
             </v-card>
             <v-card color="accent" rounded="circle" flat v-if="item.department === 'WT'">
-                <v-card-text :style="{ color: 'rgb(var(--v-theme-surface))' }">{{ item.department }}</v-card-text>
+                <v-card-text class="surface-color">{{ item.department }}</v-card-text>
             </v-card>
         </td>
         <td class="text-center">

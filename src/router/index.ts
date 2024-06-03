@@ -17,7 +17,7 @@ export const router = createRouter({
             component: () => import('@/views/pages/maintenance/error/Error404Page.vue')
         },
         {
-            path: '/forum',
+            path: '/portalsite',
             component: () => import('@/views/pages/underconstruction/UnderConstruction.vue')
         },
         {

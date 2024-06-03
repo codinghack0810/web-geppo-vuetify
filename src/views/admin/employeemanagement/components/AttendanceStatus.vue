@@ -18,7 +18,7 @@ const attendanceListItems = shallowRef(attendanceItems);
                             </template>
                         </tbody>
                     </v-table>
-                    <div class="text-caption" :style="{ color: 'rgb(var(--v-theme-error))' }">
+                    <div class="text-caption error-color">
                         却下理由：スペシャルデーチケットをご利用の場合は備考にご家族情報を入力してください。
                     </div>
                 </v-card-text>
