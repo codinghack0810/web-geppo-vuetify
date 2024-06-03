@@ -27,16 +27,6 @@ const props = defineProps({ item: Object });
             {{ $t(props.item.sendDate) }}
         </td>
         <td>
-            <!-- <div class="my-1">
-                <v-btn color="secondary" variant="flat" rounded="lg" icon>
-                    <v-icon icon="mdi-delete-forever" color="lightsecondary"></v-icon>
-                </v-btn>
-                <span class="px-1"></span>
-                <v-btn color="primary" variant="flat" rounded="lg" style="height: 42px">
-                    <v-icon icon="mdi-pencil" color="lightprimary" size="large"></v-icon>
-                    修正
-                </v-btn>
-            </div> -->
             <div class="my-1">
                 <v-btn color="primary" variant="flat" rounded="lg" v-if="item.type === '遅刻'" block>
                     <v-icon icon="mdi-attachment mdi-rotate-270" color="lightprimary" size="large"></v-icon>

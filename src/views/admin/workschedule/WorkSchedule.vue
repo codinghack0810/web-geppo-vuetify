@@ -7,7 +7,7 @@ const nowMonth = nowDate.getMonth() + 1;
 const formattedMonth = String(nowMonth).padStart(2, '0');
 </script>
 <template>
-    <div class="pa-2" style="border: 1px solid rgb(var(--v-theme-inputBorder)); display: inline; border-radius: 5px">
+    <div class="pa-2 borderCell" style="width: 170px">
         {{ nowYear }}年 {{ formattedMonth }}月 <span class="pl-5"><v-icon icon="mdi-calendar-blank"></v-icon></span>
     </div>
     <div class="py-4"></div>
@@ -56,7 +56,7 @@ const formattedMonth = String(nowMonth).padStart(2, '0');
                         flat
                         v-if="item.department === 'WT'"
                     >
-                        <v-card-text style="color: white">
+                        <v-card-text class="surface-color">
                             {{ item.department }}
                         </v-card-text>
                     </v-card>
@@ -69,7 +69,7 @@ const formattedMonth = String(nowMonth).padStart(2, '0');
                         </v-card-text>
                     </v-card>
                     <v-card color="lightsecondary" class="text-center" variant="flat" v-if="!item.companyWorkSchedule">
-                        <v-card-text style="color: white">
+                        <v-card-text class="surface-color">
                             <v-icon icon="mdi-tray-arrow-down" color="borderLight" size="large" class="pr-3"></v-icon>
                             自社
                         </v-card-text>
@@ -84,7 +84,7 @@ const formattedMonth = String(nowMonth).padStart(2, '0');
                         </v-card-text>
                     </v-card>
                     <v-card color="lightsecondary" class="text-center" variant="flat" v-if="!item.customerWorkSchedule">
-                        <v-card-text style="color: white">
+                        <v-card-text class="surface-color">
                             <v-icon icon="mdi-tray-arrow-down" color="borderLight" size="large" class="pr-3"></v-icon>
                             客先
                         </v-card-text>

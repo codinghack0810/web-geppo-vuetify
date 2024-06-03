@@ -16,10 +16,7 @@ const attendanceListItems = shallowRef(attendanceItem);
                         {{ nowMonth }} <span class="text-h4 font-weight-thin">月</span> {{ nowDay }}
                         <span class="text-h4 font-weight-thin">日 ( {{ formattedWeek }} )</span>
                     </div>
-                    <div
-                        class="pa-2 float-right"
-                        style="border: 1px solid rgb(var(--v-theme-inputBorder)); display: inline; border-radius: 5px; color: black"
-                    >
+                    <div class="pa-2 float-right borderCell">
                         {{ nowYear }} / {{ formattedMonth }} / {{ formattedDay }}
                         <span class="pl-5"><v-icon icon="mdi-calendar-blank"></v-icon></span>
                     </div>

@@ -29,22 +29,13 @@ const subScriptionList = shallowRef(subScriptionItems);
             <div class="py-2"></div>
             <v-btn color="secondarydisabled" flat>
                 <v-icon icon="mdi-plus-circle" color="lightsecondarydisabled" size="large"></v-icon>
-                <span style="color: rgb(var(--v-theme-surface))"> 追加</span>
+                <span class="surface-color"> 追加</span>
             </v-btn>
-            <div
-                class="pa-2 mr-3 float-right"
-                style="
-                    border: 1px solid rgb(var(--v-theme-inputBorder));
-                    border-radius: 5px;
-                    background-color: rgb(var(--v-theme-lightsecondarydisabled));
-                "
-            >
-                16000
-            </div>
+            <div class="pa-2 mr-3 float-right disabledCell">16000</div>
             <div class="float-right align-center pa-2">合計稼働</div>
             <v-btn color="secondarydisabled" class="float-right px-10" flat>
                 <v-icon icon="mdi-checkbox-multiple-blank-outline" color="lightsecondarydisabled" size="large"></v-icon>
-                <span style="color: rgb(var(--v-theme-surface))"> 前月をコピー</span>
+                <span class="surface-color"> 前月をコピー</span>
             </v-btn>
         </v-expansion-panel-text>
     </v-expansion-panel>

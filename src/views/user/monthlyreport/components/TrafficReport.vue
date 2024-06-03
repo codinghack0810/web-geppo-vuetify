@@ -17,7 +17,7 @@ const trafficReportList = shallowRef(trafficReportItems);
             </v-row>
             <div class="py-2"></div>
             <div class="d-flex justify-between">
-                <div style="width: 44px; text-align: center"></div>
+                <div class="text-center" style="width: 44px"></div>
                 <div style="width: calc(15% + 42px)">利用日</div>
                 <div style="width: calc(10% + 2px)">行先</div>
                 <div style="width: calc(10% + 2px)">交通手段</div>
@@ -35,16 +35,7 @@ const trafficReportList = shallowRef(trafficReportItems);
                         <v-icon icon="mdi-plus-circle" color="lightsecondary" size="large"></v-icon>
                         追加
                     </v-btn>
-                    <div
-                        class="pa-2 mr-3 float-right"
-                        style="
-                            border: 1px solid rgb(var(--v-theme-inputBorder));
-                            border-radius: 5px;
-                            background-color: rgb(var(--v-theme-lightsecondarydisabled));
-                        "
-                    >
-                        16000
-                    </div>
+                    <div class="pa-2 mr-3 float-right disabledCell">16000</div>
                     <div class="float-right align-center pa-2">合計稼働</div>
                 </v-col>
                 <v-col cols="12">

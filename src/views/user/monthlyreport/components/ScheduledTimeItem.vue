@@ -1,19 +1,8 @@
 <template lang="">
     <div class="d-flex justify-between">
-        <div
-            class="borderCell"
-            style="
-                width: 40px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                text-align: center;
-                color: rgb(var(--v-theme-secondary));
-                background-color: rgb(var(--v-theme-lightsecondarydisabled));
-            "
-        >
+        <div class="disabledCell text-center" style="width: 40px; display: flex; flex-direction: column; justify-content: space-between">
             {{ index + 1 }}
-            <div class="borderCell table-button" style="width: 100%; padding: 0; border: 0">
+            <div class="borderCell table-button pa-0 border-0" style="width: 100%">
                 <v-btn color="secondary" v-if="index === total - 1" icon rounded="lg">
                     <v-icon color="lightsecondary" icon="mdi-delete-forever"></v-icon>
                 </v-btn>
@@ -43,10 +32,7 @@
             </div>
             <div class="table-content-width">
                 <div class="table-key">勤務時間</div>
-                <div
-                    class="borderCell table-value"
-                    style="color: rgb(var(--v-theme-secondary)); background-color: rgb(var(--v-theme-lightsecondarydisabled))"
-                >
+                <div class="disabledCell table-value">
                     {{ $t(props.item.workTime) }}
                 </div>
             </div>
@@ -56,7 +42,7 @@
                     {{ $t(props.item.note) }}
                 </div>
             </div>
-            <div class="borderCell table-delete-button" style="width: 80px; padding: 0; border: 0">
+            <div class="borderCell table-delete-button pa-0 border-0" style="width: 80px">
                 <v-btn color="secondary" v-if="index === total - 1">
                     <v-icon color="lightsecondary" icon="mdi-delete-forever" size="large"></v-icon>
                     削除

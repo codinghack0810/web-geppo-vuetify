@@ -27,7 +27,7 @@ const sidebarMenu = shallowRef(sidebarItems);
             <Logo />
         </div>
         <div class="pa-5 sidebar">
-            <v-icon icon="mdi-account" style="margin: auto; display: flex" color="lightsecondary" size="x-large"></v-icon>
+            <v-icon icon="mdi-account" class="d-flex mx-auto" color="lightsecondary" size="x-large"></v-icon>
             <div class="text-h5 text-center font-weight-medium">名字名前</div>
         </div>
         <!-- ---------------------------------------------- -->

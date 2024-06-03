@@ -17,7 +17,7 @@ const openEmployee = () => {
 };
 </script>
 <template>
-    <div class="pa-2" style="border: 1px solid rgb(var(--v-theme-inputBorder)); display: inline; border-radius: 5px">
+    <div class="pa-2 borderCell" style="width: 170px">
         {{ nowYear }}年 {{ formattedMonth }}月 <span class="pl-5"><v-icon icon="mdi-calendar-blank"></v-icon></span>
     </div>
     <div class="py-4"></div>
@@ -69,7 +69,7 @@ const openEmployee = () => {
                     >
                     <v-card color="lightsecondary" rounded="0" variant="flat" v-if="item.status === '承認済み'"
                         ><v-card-text>
-                            <div style="color: white">{{ item.status }}</div>
+                            <div class="surface-color">{{ item.status }}</div>
                         </v-card-text>
                     </v-card>
                 </td>
@@ -85,13 +85,13 @@ const openEmployee = () => {
                     <v-card color="secondary" variant="flat" v-if="item.companyWorkSchedule">
                         <v-card-text>
                             <v-icon icon="mdi-tray-arrow-down" color="lightsecondary" class="pr-3"></v-icon>
-                            <span style="color: white">自社</span>
+                            <span class="surface-color">自社</span>
                         </v-card-text>
                     </v-card>
                     <v-card color="secondarydisabled" variant="flat" v-if="!item.companyWorkSchedule">
                         <v-card-text>
                             <v-icon icon="mdi-tray-arrow-down" color="lightsecondarydisabled" class="pr-3"></v-icon>
-                            <span style="color: white">自社</span>
+                            <span class="surface-color">自社</span>
                         </v-card-text>
                     </v-card>
                 </td>
@@ -102,19 +102,19 @@ const openEmployee = () => {
                     <v-card color="success" variant="flat" v-if="item.customerWorkSchedule?.includes('true')">
                         <v-card-text>
                             <v-icon icon="mdi-tray-arrow-down" color="lightsuccess" class="pr-3"></v-icon>
-                            <span style="color: white"> 客先</span>
+                            <span class="surface-color"> 客先</span>
                         </v-card-text>
                     </v-card>
                     <v-card color="secondarydisabled" variant="flat" v-if="item.customerWorkSchedule?.includes('false')">
                         <v-card-text>
                             <v-icon icon="mdi-tray-arrow-down" color="lightsecondarydisabled" class="pr-3"></v-icon>
-                            <span style="color: white"> 客先</span>
+                            <span class="surface-color"> 客先</span>
                         </v-card-text>
                     </v-card>
                     <v-card color="secondary" variant="flat" v-if="item.customerWorkSchedule?.includes('done')">
                         <v-card-text>
                             <v-icon icon="mdi-check-circle" color="lightsecondary" class="pr-3"></v-icon>
-                            <span style="color: white"> 済</span>
+                            <span class="surface-color"> 済</span>
                         </v-card-text>
                     </v-card>
                 </td>
@@ -122,13 +122,13 @@ const openEmployee = () => {
                     <v-card color="primary" variant="flat" v-if="item.approval">
                         <v-card-text>
                             <v-icon icon="mdi-check-circle" color="lightprimary"></v-icon>
-                            <span style="color: white"> 承認</span>
+                            <span class="surface-color"> 承認</span>
                         </v-card-text>
                     </v-card>
                     <v-card color="secondarydisabled" variant="flat" v-if="!item.approval">
                         <v-card-text>
                             <v-icon icon="mdi-check-circle" color="lightsecondarydisabled"></v-icon>
-                            <span style="color: white"> 承認</span>
+                            <span class="surface-color"> 承認</span>
                         </v-card-text>
                     </v-card>
                 </td>

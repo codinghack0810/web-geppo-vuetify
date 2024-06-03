@@ -10,43 +10,27 @@ const week = weekDay[weekNum];
 </script>
 <template>
     <div class="d-flex justify-between">
-        <div
-            class="borderCell"
-            style="
-                width: 40px;
-                text-align: center;
-                color: rgb(var(--v-theme-secondary));
-                background-color: rgb(var(--v-theme-lightsecondarydisabled));
-            "
-        >
+        <div class="disabledCell text-center" style="width: 40px">
             {{ index + 1 }}
         </div>
         <div class="borderCell" style="width: 15%">
             {{ item.date }}
             <v-icon icon="mdi-calendar-blank" class="float-right" size="small"></v-icon>
         </div>
-        <div
-            class="borderCell"
-            style="
-                width: 40px;
-                text-align: center;
-                color: rgb(var(--v-theme-secondary));
-                background-color: rgb(var(--v-theme-lightsecondarydisabled));
-            "
-        >
+        <div class="disabledCell text-center" style="width: 40px">
             {{ week }}
         </div>
-        <div class="borderCell" style="padding: 0; width: 10%">
+        <div class="borderCell pa-0" style="width: 10%">
             <v-combobox v-model="item.destination" :items="['客先', '自社', '自宅']" variant="outlined"></v-combobox>
         </div>
-        <div class="borderCell" style="padding: 0; width: 10%">
+        <div class="borderCell pa-0" style="width: 10%">
             <v-combobox v-model="item.trafficMethod" :items="['電車', 'バス', '他']" variant="outlined"></v-combobox>
         </div>
         <div class="borderCell" style="width: 10%">
             {{ item.from }}
         </div>
         <div class="borderCell" style="width: 10%">{{ item.to }}</div>
-        <div style="text-align: center; width: 7%">
+        <div class="text-center" style="width: 7%">
             <v-checkbox v-model="item.round" color="primary" label="往復"></v-checkbox>
         </div>
         <div class="borderCell" style="width: 8%">

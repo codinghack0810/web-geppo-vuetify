@@ -12,13 +12,13 @@ const scheduledTime = shallowRef(scheduleTimeItems);
         <v-expansion-panel-text>
             <p>勤務先の定時時刻と休憩時間数を入力してください。</p>
             <div class="d-flex justify-between table-header">
-                <div style="width: 40px; text-align: center"></div>
+                <div class="text-center" style="width: 40px"></div>
                 <div style="width: 10%">開始時刻</div>
                 <div style="width: 10%">終了時刻</div>
                 <div style="width: 10%">休憩時間</div>
                 <div style="width: 10%">勤務時間</div>
                 <div style="width: calc(60% - 120px)">備考</div>
-                <div style="width: 80px; padding: 0"></div>
+                <div class="pa-0" style="width: 80px"></div>
             </div>
             <template v-for="(item, index) in scheduledTime" :key="index">
                 <ScheduledTimeItem :item="item" :total="scheduledTime.length" :index="index" />

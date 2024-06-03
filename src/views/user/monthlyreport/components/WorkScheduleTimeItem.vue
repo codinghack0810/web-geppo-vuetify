@@ -1,19 +1,8 @@
 <template lang="">
     <div class="d-flex justify-between">
-        <div
-            class="borderCell"
-            style="
-                width: 40px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                text-align: center;
-                color: rgb(var(--v-theme-secondary));
-                background-color: rgb(var(--v-theme-lightsecondarydisabled));
-            "
-        >
+        <div class="disabledCell d-flex flex-column justify-between text-center" style="width: 40px">
             {{ index + 1 }}
-            <div class="borderCell table-button" style="width: 100%; padding: 0; border: 0">
+            <div class="borderCell table-button w-100 pa-0 border-0">
                 <v-btn color="secondary" icon rounded="lg">
                     <v-icon color="lightsecondary" icon="mdi-delete-forever"></v-icon>
                 </v-btn>
@@ -23,15 +12,7 @@
             {{ item.date }}
             <v-icon icon="mdi-calendar-blank" class="float-right" size="small"></v-icon>
         </div>
-        <div
-            class="borderCell"
-            style="
-                width: 40px;
-                text-align: center;
-                color: rgb(var(--v-theme-secondary));
-                background-color: rgb(var(--v-theme-lightsecondarydisabled));
-            "
-        >
+        <div class="disabledCell text-center" style="width: 40px">
             {{ week }}
         </div>
         <div class="borderCell" style="width: 10%">
@@ -46,18 +27,15 @@
             {{ item.restTime }}
             <v-icon icon="mdi-clock-outline" class="float-right" size="small"></v-icon>
         </div>
-        <div
-            class="borderCell"
-            style="width: 8%; color: rgb(var(--v-theme-secondary)); background-color: rgb(var(--v-theme-lightsecondarydisabled))"
-        >
+        <div class="disabledCell" style="width: 8%">
             {{ item.workTime }}
         </div>
         <div class="borderCell" style="width: calc(42% - 120px)" v-if="item.note">
             {{ item.note }}
         </div>
         <div style="width: calc(42% - 120px); color: rgb(var(--v-theme-lightsecondary))" v-else>備考</div>
-        <div class="borderCell" style="width: 8%; border: 0">{{ item.mark }}</div>
-        <div class="table-delete-button" style="width: 80px; padding: 0; border: 0">
+        <div class="borderCell border-0" style="width: 8%">{{ item.mark }}</div>
+        <div class="table-delete-button pa-0 border-0" style="width: 80px">
             <v-btn color="secondary">
                 <v-icon color="lightsecondary" icon="mdi-delete-forever" size="large"></v-icon>
                 削除

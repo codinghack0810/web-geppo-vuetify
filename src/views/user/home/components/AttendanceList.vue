@@ -5,7 +5,7 @@ const index = props.index + 1;
 </script>
 
 <template>
-    <v-list-item style="border-bottom: 1px solid rgb(var(--v-theme-borderLight))">
+    <v-list-item class="list-item-bottom">
         <div class="d-flex flex-row justify-between mobile-mode">
             <div class="mobile-show num-panel">{{ index }}</div>
             <div class="main-content">

@@ -9,7 +9,7 @@ const formattedMonth = String(nowMonth).padStart(2, '0');
 const fileList = shallowRef(fileListItems);
 </script>
 <template>
-    <div class="pa-2" style="border: 1px solid rgb(var(--v-theme-inputBorder)); display: inline; border-radius: 5px">
+    <div class="pa-2 d-sm-inline borderCell">
         {{ nowYear }}年 {{ formattedMonth }}月 <span class="pl-5"><v-icon icon="mdi-calendar-blank"></v-icon></span>
     </div>
     <div class="py-3"></div>

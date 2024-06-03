@@ -31,19 +31,19 @@
                         </v-col>
                         <v-col cols="12" md="4" sm="4">
                             <v-btn color="lightsecondarydisabled" flat block>
-                                <div style="color: rgb(var(--v-theme-secondary))">営業</div>
+                                <div sclass="secondary-color">営業</div>
                             </v-btn>
                         </v-col>
                         <v-col cols="12" md="4" sm="4">
                             <v-btn color="lightsecondarydisabled" flat block>
-                                <div style="color: rgb(var(--v-theme-secondary))">総務</div>
+                                <div class="secondary-color">総務</div>
                             </v-btn>
                         </v-col>
                     </v-row>
                 </v-col>
             </v-row>
             <div class="d-flex align-center py-5">
-                <div class="text-h5" style="color: rgb(var(--v-theme-textmain)); width: 100px">自社所属</div>
+                <div class="text-h5 textmain-color w-100">自社所属</div>
                 <v-divider thickness="2" color="main" class="my-5"></v-divider>
             </div>
             <v-row>

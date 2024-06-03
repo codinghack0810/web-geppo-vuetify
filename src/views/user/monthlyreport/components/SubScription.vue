@@ -17,7 +17,7 @@ const subScriptionList = shallowRef(subScriptionItems);
             </v-row>
             <div class="py-2"></div>
             <div class="d-flex justify-between">
-                <div style="width: 40px; text-align: center"></div>
+                <div class="text-center" style="width: 40px"></div>
                 <div style="width: 15%">手段</div>
                 <div style="width: 25%">利用区間</div>
                 <div style="width: 10%">金額</div>
@@ -31,16 +31,7 @@ const subScriptionList = shallowRef(subScriptionItems);
                 <v-icon icon="mdi-plus-circle" color="lightsecondary" size="large"></v-icon>
                 追加
             </v-btn>
-            <div
-                class="pa-2 mr-3 float-right"
-                style="
-                    border: 1px solid rgb(var(--v-theme-inputBorder));
-                    border-radius: 5px;
-                    background-color: rgb(var(--v-theme-lightsecondarydisabled));
-                "
-            >
-                16000
-            </div>
+            <div class="pa-2 mr-3 float-right disabledCell">16000</div>
             <div class="float-right align-center pa-2">合計稼働</div>
             <v-btn color="secondary" class="float-right px-10">
                 <v-icon icon="mdi-checkbox-multiple-blank-outline" color="lightsecondary" size="large"></v-icon>

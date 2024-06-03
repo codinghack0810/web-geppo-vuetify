@@ -58,7 +58,7 @@ const enrollmentStatusList = shallowRef(enrollmentStatusItems);
             <v-text-field width="50%" variant="outlined"></v-text-field>
 
             <div class="d-flex align-center my-8">
-                <div class="text-h5" style="color: rgb(var(--v-theme-textmain)); width: 100px">所属情報</div>
+                <div class="text-h5 textmain-color" style="width: 100px">所属情報</div>
                 <v-divider color="textmain"></v-divider>
             </div>
 
@@ -84,7 +84,7 @@ const enrollmentStatusList = shallowRef(enrollmentStatusItems);
             </v-row>
 
             <div class="d-flex align-center my-8">
-                <div class="text-h5" style="color: rgb(var(--v-theme-textmain)); width: 100px">在籍状況</div>
+                <div class="text-h5 textmain-color" style="width: 100px">在籍状況</div>
                 <v-divider color="textmain"></v-divider>
             </div>
 

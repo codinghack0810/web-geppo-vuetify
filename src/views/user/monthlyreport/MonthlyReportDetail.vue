@@ -13,7 +13,7 @@ const panel = [0, 1, 2, 3, 4, 5];
 <template>
     <v-row>
         <v-col cols="12" md="12">
-            <div class="pa-2 float-left" style="border: 1px solid rgb(var(--v-theme-inputBorder)); display: inline; border-radius: 5px">
+            <div class="pa-2 float-left borderCell">
                 {{ nowYear }}年 {{ formattedMonth }}月 <span class="pl-5"><v-icon icon="mdi-calendar-blank"></v-icon></span>
             </div>
         </v-col>

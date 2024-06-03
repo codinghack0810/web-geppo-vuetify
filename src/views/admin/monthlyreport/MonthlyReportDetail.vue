@@ -13,7 +13,7 @@ const panel = [0, 1, 2, 3, 4, 5];
 <template>
     <v-row>
         <v-col cols="12" md="12">
-            <div class="pa-2 float-left" style="border: 1px solid rgb(var(--v-theme-inputBorder)); display: inline; border-radius: 5px">
+            <div class="pa-2 float-left borderCell" style="width: 170px">
                 {{ nowYear }}年 {{ formattedMonth }}月 <span class="pl-5"><v-icon icon="mdi-calendar-blank"></v-icon></span>
             </div>
         </v-col>
@@ -73,7 +73,7 @@ const panel = [0, 1, 2, 3, 4, 5];
             <div class="py-2"></div>
             <v-btn color="primarydisabled" class="float-right px-10" flat>
                 <v-icon icon="mdi-check-circle" color="lightprimarydisabled" size="large"></v-icon>
-                <div style="color: rgb(var(--v-theme-surface))">全体を一時保存</div>
+                <div class="surface-color">全体を一時保存</div>
             </v-btn>
         </v-col>
         <div class="py-3"></div>

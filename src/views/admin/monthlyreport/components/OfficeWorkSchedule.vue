@@ -11,7 +11,7 @@
                 </template>
             </v-list>
             <p>勤務表に関する連絡事項</p>
-            <p style="color: rgb(var(--v-theme-darkText))">月途中で現場変更のため、勤務表が2つあります。</p>
+            <p class="darkText-color">月途中で現場変更のため、勤務表が2つあります。</p>
         </v-expansion-panel-text>
     </v-expansion-panel>
 </template>

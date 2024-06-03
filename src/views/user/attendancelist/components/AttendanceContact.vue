@@ -1,6 +1,5 @@
 <script setup>
-import { nowMonth, formattedWeek } from '@/utils/date.ts';
-
+import { formattedWeek } from '@/utils/date.ts';
 </script>
 <template lang="">
     <v-expansion-panel>
@@ -28,15 +27,7 @@ import { nowMonth, formattedWeek } from '@/utils/date.ts';
                     <div>日付</div>
                     <div class="d-flex">
                         <input type="date" class="borderCell" v-model="date" />
-                        <div
-                            class="borderCell"
-                            style="
-                                width: 40px;
-                                text-align: center;
-                                color: rgb(var(--v-theme-secondary));
-                                background-color: rgb(var(--v-theme-lightsecondarydisabled));
-                            "
-                        >
+                        <div class="disabledCell text-center" style="width: 40px">
                             {{ formattedWeek }}
                         </div>
                         <v-btn color="secondary" class="mx-1 align-self-center">

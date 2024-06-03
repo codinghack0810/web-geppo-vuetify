@@ -308,6 +308,9 @@ input {
 .textmain-brColor {
     border-color: rgb(var(--v-theme-textmain));
 }
+.secondarydisabled-color {
+    color: rgb(var(--v-theme-secondarydisabled));
+}
 
 .list-bottom {
     border-bottom: 2px solid rgb(var(--v-theme-lightsecondarydisabled));

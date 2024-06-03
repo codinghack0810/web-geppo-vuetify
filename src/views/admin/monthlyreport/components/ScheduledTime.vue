@@ -26,15 +26,15 @@ const scheduledTime = shallowRef(scheduleTimeItems);
             <v-col class="px-0 mb-10">
                 <v-btn color="secondarydisabled" class="float-left" @click="scheduledTime.push({})" flat>
                     <v-icon icon="mdi-plus-circle" color="lightsecondarydisabled" size="large"></v-icon>
-                    <span style="color: rgb(var(--v-theme-surface))">追加</span>
+                    <span class="surface-color">追加</span>
                 </v-btn>
                 <v-btn color="primarydisabled" class="px-10 ml-2 float-right" flat>
                     <v-icon icon="mdi-check-circle" color="lightprimarydisabled" size="large"></v-icon>
-                    <span style="color: rgb(var(--v-theme-surface))">前月をコピー</span>
+                    <span class="surface-color">前月をコピー</span>
                 </v-btn>
                 <v-btn color="secondarydisabled" class="px-10 mr-2 float-right" flat>
                     <v-icon icon="mdi-checkbox-multiple-blank-outline" color="lightsecondarydisabled" size="large"></v-icon>
-                    <span style="color: rgb(var(--v-theme-surface))">前月をコピー</span>
+                    <span class="surface-color">前月をコピー</span>
                 </v-btn>
             </v-col>
         </v-expansion-panel-text>

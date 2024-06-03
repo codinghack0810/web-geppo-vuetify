@@ -16,18 +16,16 @@
                     <v-btn color="primary" block>開発</v-btn>
                 </v-col>
                 <v-col cols="12" md="2" sm="4">
-                    <v-btn color="lightsecondarydisabled" block flat> <div style="color: rgb(var(--v-theme-secondary))">テスト</div></v-btn>
+                    <v-btn color="lightsecondarydisabled" block flat> <div class="secondary-color">テスト</div></v-btn>
                 </v-col>
                 <v-col cols="12" md="2" sm="4">
-                    <v-btn color="lightsecondarydisabled" block flat> <div style="color: rgb(var(--v-theme-secondary))">保守</div></v-btn>
+                    <v-btn color="lightsecondarydisabled" block flat> <div class="secondary-color">保守</div></v-btn>
                 </v-col>
                 <v-col cols="12" md="2" sm="4">
-                    <v-btn color="lightsecondarydisabled" block flat> <div style="color: rgb(var(--v-theme-secondary))">PMO</div></v-btn>
+                    <v-btn color="lightsecondarydisabled" block flat> <div class="secondary-color">PMO</div></v-btn>
                 </v-col>
                 <v-col cols="12" md="2" sm="4">
-                    <v-btn color="lightsecondarydisabled" block flat>
-                        <div style="color: rgb(var(--v-theme-secondary))">ヘルプデスク</div></v-btn
-                    >
+                    <v-btn color="lightsecondarydisabled" block flat> <div class="secondary-color">ヘルプデスク</div></v-btn>
                 </v-col>
             </v-row>
             <div class="py-3"></div>
@@ -63,7 +61,7 @@
                     >
                 </v-col>
                 <v-col cols="12" md="2" sm="4">
-                    <v-btn color="lightsecondarydisabled" block flat> <div style="color: rgb(var(--v-theme-secondary))">その他</div></v-btn>
+                    <v-btn color="lightsecondarydisabled" block flat> <div class="secondary-color">その他</div></v-btn>
                 </v-col>
             </v-row>
             <div class="py-3"></div>

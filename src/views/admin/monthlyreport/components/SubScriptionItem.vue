@@ -6,15 +6,7 @@ const method = ref(props.item.method);
 </script>
 <template>
     <div class="d-flex justify-between">
-        <div
-            class="borderCell"
-            style="
-                width: 40px;
-                text-align: center;
-                color: rgb(var(--v-theme-secondary));
-                background-color: rgb(var(--v-theme-lightsecondarydisabled));
-            "
-        >
+        <div class="disabledCell text-center" style="width: 40px">
             {{ index + 1 }}
         </div>
         <div class="radioCell" style="width: 15%">
@@ -34,13 +26,13 @@ const method = ref(props.item.method);
             {{ item.cost }}
         </div>
         <div class="borderCell" style="width: calc(50% - 120px)">
-            <div style="color: rgb(var(--v-theme-secondarydisabled))" v-if="!item.note">備考</div>
+            <div class="secondarydisabled-color" v-if="!item.note">備考</div>
             <div v-else>{{ item.note }}</div>
         </div>
         <div>
             <v-btn color="secondarydisabled" class="float-right" style="width: 80px" flat>
                 <v-icon icon="mdi-delete-forever" color="lightsecondarydisabled" size="large"></v-icon>
-                <span style="color: rgb(var(--v-theme-surface))">削除</span>
+                <span class="surface-color">削除</span>
             </v-btn>
         </div>
     </div>

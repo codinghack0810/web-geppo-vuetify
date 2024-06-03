@@ -8,7 +8,7 @@ const formattedMonth = String(nowMonth).padStart(2, '0');
     <v-expansion-panel>
         <v-expansion-panel-title> 提出履歴 </v-expansion-panel-title>
         <v-expansion-panel-text>
-            <div class="borderCell" style="display: inline">
+            <div class="borderCell d-sm-inline">
                 {{ nowYear }}年 {{ formattedMonth }}月 <span class="pl-5"><v-icon icon="mdi-calendar-blank"></v-icon></span>
             </div>
             <v-row>
