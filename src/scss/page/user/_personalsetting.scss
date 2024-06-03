@@ -8,11 +8,11 @@
     .flex-row-column {
         flex-direction: column;
     }
-    .input-password{
-        .v-text-field{
-            width: 100%
-        }
-    }
+    // .input-password{
+    //     .v-text-field {
+    //         width: 100%
+    //     }
+    // }
 }
 
 .v-checkbox {
@@ -20,7 +20,7 @@
 }
 
 .input-password{
-    .v-text-field{
-        width: 25%
+    .v-text-field {
+        max-width: 500px;
     }
 }

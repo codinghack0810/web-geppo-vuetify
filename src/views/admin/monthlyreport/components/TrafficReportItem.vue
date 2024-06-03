@@ -53,12 +53,12 @@ const week = weekDay[weekNum];
             {{ item.cost }}
         </div>
         <div style="width: 22%">
-            <v-btn color="secondary" class="float-right mx-1" flat>
-                <v-icon icon="mdi-delete-forever" color="lightsecondary" size="large"></v-icon>
+            <v-btn color="secondarydisabled" class="float-right mx-1" flat>
+                <v-icon icon="mdi-delete-forever" color="lightsecondarydisabled" size="large"></v-icon>
             </v-btn>
-            <v-btn color="secondary" class="float-right mx-1" flat>
-                <v-icon icon="mdi-checkbox-multiple-blank-outline" color="lightsecondary" size="large"></v-icon>
-                コピー追加
+            <v-btn color="secondarydisabled" class="float-right mx-1" flat>
+                <v-icon icon="mdi-checkbox-multiple-blank-outline" color="lightsecondarydisabled" size="large"></v-icon>
+                <span style="color: rgb(var(--v-theme-surface))">コピー追加</span>
             </v-btn>
         </div>
     </div>
