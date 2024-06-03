@@ -31,9 +31,9 @@ const trafficReportList = shallowRef(trafficReportItems);
             <div class="py-2"></div>
             <v-row>
                 <v-col cols="12">
-                    <v-btn color="secondarydisabled" flat>
-                        <v-icon icon="mdi-plus-circle" color="lightsecondarydisabled" size="large"></v-icon>
-                        <span style="color: rgb(var(--v-theme-surface))">追加</span>
+                    <v-btn color="secondary">
+                        <v-icon icon="mdi-plus-circle" color="lightsecondary" size="large"></v-icon>
+                        追加
                     </v-btn>
                     <div
                         class="pa-2 mr-3 float-right"

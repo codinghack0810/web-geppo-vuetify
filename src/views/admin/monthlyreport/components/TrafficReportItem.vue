@@ -1,6 +1,12 @@
 <script setup>
 const props = defineProps({ item: Object, total: Number, index: Number });
-import { nowWeek } from '@/utils/date.ts';
+const weekDay = ['日', '月', '火', '水', '木', '金', '土'];
+
+const date = props.item.date;
+const dateObject = new Date(date);
+const weekNum = dateObject.getDay();
+
+const week = weekDay[weekNum];
 </script>
 <template>
     <div class="d-flex justify-between">
@@ -28,7 +34,7 @@ import { nowWeek } from '@/utils/date.ts';
                 background-color: rgb(var(--v-theme-lightsecondarydisabled));
             "
         >
-            {{ nowWeek }}
+            {{ week }}
         </div>
         <div class="borderCell" style="padding: 0; width: 10%">
             <v-combobox v-model="item.destination" :items="['客先', '自社', '自宅']" variant="outlined"></v-combobox>
@@ -47,12 +53,12 @@ import { nowWeek } from '@/utils/date.ts';
             {{ item.cost }}
         </div>
         <div style="width: 22%">
-            <v-btn color="secondarydisabled" class="float-right mx-1" flat>
-                <v-icon icon="mdi-delete-forever" color="lightsecondarydisabled" size="large"></v-icon>
+            <v-btn color="secondary" class="float-right mx-1" flat>
+                <v-icon icon="mdi-delete-forever" color="lightsecondary" size="large"></v-icon>
             </v-btn>
-            <v-btn color="secondarydisabled" class="float-right mx-1" flat>
-                <v-icon icon="mdi-checkbox-multiple-blank-outline" color="lightsecondarydisabled" size="large"></v-icon>
-                <span style="color: rgb(var(--v-theme-surface))">コピー追加</span>
+            <v-btn color="secondary" class="float-right mx-1" flat>
+                <v-icon icon="mdi-checkbox-multiple-blank-outline" color="lightsecondary" size="large"></v-icon>
+                コピー追加
             </v-btn>
         </div>
     </div>
