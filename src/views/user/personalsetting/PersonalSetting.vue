@@ -1,9 +1,10 @@
 <script setup>
+import { ref } from 'vue';
 import WeeklyReportDeliverySetting from './components/WeeklyReportDeliverySetting.vue';
 import CompanyWorkRegistration from './components/CompanyWorkRegistration.vue';
 import ChangePassword from './components/ChangePassword.vue';
 
-const panel = [0, 1, 2];
+const panel = ref([0, 1, 2]);
 </script>
 <template>
     <v-row>

@@ -1,9 +1,10 @@
 <script setup>
+import { ref } from 'vue';
 import RegistrationInfo from './components/RegistrationInfo.vue';
 import AttendanceStatus from './components/AttendanceStatus.vue';
 import VacationTotal from './components/VacationTotal.vue';
 
-const panel = [0, 1, 2];
+const panel = ref([0, 1, 2]);
 </script>
 <template>
     <v-row>

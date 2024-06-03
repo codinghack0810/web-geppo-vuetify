@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 import NoticeAdmin from './components/NoticeAdmin.vue';
 import NoticeEmployees from './components/NoticeEmployees.vue';
 import MonthyReport from './components/MonthlyReport.vue';
@@ -9,7 +10,7 @@ const nowDate = new Date();
 const nowMonth = nowDate.getMonth() + 1;
 const lastMonth = nowDate.getMonth();
 
-const panel = [0, 1, 2, 3, 4];
+const panel = ref([0, 1, 2, 3, 4]);
 </script>
 <template>
     <v-row>

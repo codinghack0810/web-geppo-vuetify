@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from 'vue';
 import ScheduledTime from './components/ScheduledTime.vue';
 import OfficeWorkSchedule from './components/OfficeWorkSchedule.vue';
 import WorkScheduleTime from './components/WorkScheduleTime.vue';
@@ -7,7 +8,7 @@ import SubScription from './components/SubScription.vue';
 import TrafficReport from './components/TrafficReport.vue';
 import { nowYear, nowMonth, formattedMonth } from '@/utils/date';
 
-const panel = [0, 1, 2, 3, 4, 5];
+const panel = ref([0, 1, 2, 3, 4, 5]);
 </script>
 
 <template>

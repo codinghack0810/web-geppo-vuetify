@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from 'vue';
 import ReportHistory from './components/ReportHistory.vue';
 import ReportdayCompanyinfo from './components/ReportdayCompanyinfo.vue';
 import PaticipationBus from './components/PaticipationBus.vue';
@@ -7,7 +8,7 @@ import ProjectImprove from './components/ProjectImprove.vue';
 import TheOther from './components/TheOther.vue';
 import { nowYear, nowMonth, nowDay } from '@/utils/date';
 
-const panel = [0, 1, 2, 3];
+const panel = ref([0, 1, 2, 3]);
 </script>
 <template>
     <v-row>
