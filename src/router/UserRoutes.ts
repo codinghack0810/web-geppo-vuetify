@@ -3,7 +3,7 @@ const UserRoutes = {
     meta: {
         requiresAuth: true
     },
-    redirect: '/user/home',
+    // redirect: '/user/home',
     component: () => import('@/layouts/user/UserLayout.vue'),
     children: [
         {

@@ -47,7 +47,7 @@ const week = weekDay[weekNum];
         </div>
         <div class="borderCell" style="width: 10%">{{ item.to }}</div>
         <div style="text-align: center; width: 7%">
-            <v-checkbox v-model="item.round" color="primary" label="往復" :value="item.round"></v-checkbox>
+            <v-checkbox v-model="item.round" color="primary" label="往復"></v-checkbox>
         </div>
         <div class="borderCell" style="width: 8%">
             {{ item.cost }}

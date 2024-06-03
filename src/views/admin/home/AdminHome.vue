@@ -12,16 +12,16 @@ const lastMonth = nowDate.getMonth();
 const panel = [0, 1, 2, 3, 4];
 </script>
 <template>
-  <v-row>
-    <v-col cols="12" md="12">
-      <v-expansion-panels v-model="panel" flat multiple>
-        <NoticeAdmin />
-        <NoticeEmployees />
-        <MonthyReport :item="lastMonth" />
-        <MonthyReport :item="nowMonth" />
-        <AttandenceStatus :item="nowDate" />
-      </v-expansion-panels>
-      <CardButtons />
-    </v-col>
-  </v-row>
+    <v-row>
+        <v-col cols="12" md="12">
+            <v-expansion-panels v-model="panel" flat multiple>
+                <NoticeAdmin />
+                <NoticeEmployees />
+                <MonthyReport :item="lastMonth" />
+                <MonthyReport :item="nowMonth" />
+                <AttandenceStatus :item="nowDate" />
+            </v-expansion-panels>
+            <CardButtons />
+        </v-col>
+    </v-row>
 </template>

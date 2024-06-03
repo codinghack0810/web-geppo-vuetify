@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import AdminRoutes from './AdminRoutes';
-// import UserRoutes from './UserRoutes';
+import UserRoutes from './UserRoutes';
 import AuthRoutes from './AuthRoutes';
 import { useAuthStore } from '@/stores/auth';
 import { useUIStore } from '@/stores/ui';
@@ -25,7 +25,7 @@ export const router = createRouter({
             component: () => import('@/views/pages/underconstruction/UnderConstruction.vue')
         },
         AdminRoutes,
-        // UserRoutes,
+        UserRoutes,
         AuthRoutes
     ]
 });

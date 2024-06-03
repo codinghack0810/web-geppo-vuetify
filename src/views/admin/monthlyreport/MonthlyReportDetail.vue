@@ -30,7 +30,7 @@ const panel = [0, 1, 2, 3, 4, 5];
                 </v-card>
             </div>
             <div class="float-right switch">
-                <v-switch color="primary" label="管理者編集モード" inset></v-switch>
+                <v-switch :model-value="true" color="primary" label="管理者編集モード" inset></v-switch>
             </div>
         </v-col>
         <v-col cols="12">
@@ -55,10 +55,16 @@ const panel = [0, 1, 2, 3, 4, 5];
             </v-card>
         </v-col>
         <v-col cols="12">
-            <div class="float-right message-box">
-                <v-btn color="secondary" class="float-right align-self-end">送信</v-btn>
-                <textarea type="text"></textarea>
-            </div>
+            <v-row class="align-end">
+                <v-col cols="12" sm="12" md="11">
+                    <div class="message-box">
+                        <textarea variant="outlined"></textarea>
+                    </div>
+                </v-col>
+                <v-col cols="12" sm="12" md="1">
+                    <v-btn color="secondary" class="float-right mb-1">送信</v-btn>
+                </v-col>
+            </v-row>
         </v-col>
         <v-divider thickness="2" :style="{ 'border-color': 'rgb(var(--v-theme-textmain))' }"></v-divider>
         <v-expansion-panels v-model="panel" flat multiple>

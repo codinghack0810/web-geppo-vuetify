@@ -1,37 +1,67 @@
 <template lang="">
-    <div class="d-flex justify-between border">
+    <div class="d-flex justify-between">
         <div
             class="borderCell"
             style="
                 width: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 text-align: center;
                 color: rgb(var(--v-theme-secondary));
                 background-color: rgb(var(--v-theme-lightsecondarydisabled));
             "
         >
             {{ index + 1 }}
+            <div class="borderCell table-button" style="width: 100%; padding: 0; border: 0">
+                <v-btn color="secondary" v-if="index === total - 1" icon rounded="lg">
+                    <v-icon color="lightsecondary" icon="mdi-delete-forever"></v-icon>
+                </v-btn>
+            </div>
         </div>
-        <div style="width: 10%">
-            {{ $t(props.item.startTime) }}
-            <v-icon icon="mdi-clock-outline" class="float-right" size="small"></v-icon>
-        </div>
-        <div style="width: 10%">
-            {{ $t(props.item.endTime) }}
-            <v-icon icon="mdi-clock-outline" class="float-right" size="small"></v-icon>
-        </div>
-        <div style="width: 10%">
-            {{ $t(props.item.restTime) }}
-            <v-icon icon="mdi-clock-outline" class="float-right" size="small"></v-icon>
-        </div>
-        <div style="width: 8%; color: rgb(var(--v-theme-secondary)); background-color: rgb(var(--v-theme-lightsecondarydisabled))">
-            {{ $t(props.item.workTime) }}
-        </div>
-        <div style="width: calc(62% - 120px)">{{ $t(props.item.note) }}</div>
-        <div style="width: 80px; padding: 0; border: 0">
-            <v-btn color="secondary" v-if="index === total - 1">
-                <v-icon color="lightsecondary" icon="mdi-delete-forever" size="large"></v-icon>
-                削除
-            </v-btn>
+        <div class="table-content">
+            <div class="table-content-width">
+                <div class="table-key">開始時刻</div>
+                <div class="borderCell table-value">
+                    {{ $t(props.item.startTime) }}
+                    <v-icon icon="mdi-clock-outline" class="float-right" size="small"></v-icon>
+                </div>
+            </div>
+            <div class="table-content-width">
+                <div class="table-key">終了時刻</div>
+                <div class="borderCell table-value">
+                    {{ $t(props.item.endTime) }}
+                    <v-icon icon="mdi-clock-outline" class="float-right" size="small"></v-icon>
+                </div>
+            </div>
+            <div class="table-content-width">
+                <div class="table-key">休憩時間</div>
+                <div class="borderCell table-value">
+                    {{ $t(props.item.restTime) }}
+                    <v-icon icon="mdi-clock-outline" class="float-right" size="small"></v-icon>
+                </div>
+            </div>
+            <div class="table-content-width">
+                <div class="table-key">勤務時間</div>
+                <div
+                    class="borderCell table-value"
+                    style="color: rgb(var(--v-theme-secondary)); background-color: rgb(var(--v-theme-lightsecondarydisabled))"
+                >
+                    {{ $t(props.item.workTime) }}
+                </div>
+            </div>
+            <div class="table-content-note-width">
+                <div class="table-key">備考</div>
+                <div class="borderCell table-note">
+                    {{ $t(props.item.note) }}
+                </div>
+            </div>
+            <div class="borderCell table-delete-button" style="width: 80px; padding: 0; border: 0">
+                <v-btn color="secondary" v-if="index === total - 1">
+                    <v-icon color="lightsecondary" icon="mdi-delete-forever" size="large"></v-icon>
+                    削除
+                </v-btn>
+            </div>
         </div>
     </div>
 </template>

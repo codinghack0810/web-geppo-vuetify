@@ -144,10 +144,10 @@ header {
 		display: flex;
 		justify-content: space-between;
 		padding: 4px 0;
-		border-bottom: 2px dotted rgb(var(--v-theme-lightsecondary));
+		border-bottom: 2px dotted rgb(var(--v-theme-lightsecondarydisabled));
 
 		&:first-child {
-			border-top: 2px dotted rgb(var(--v-theme-lightsecondary));
+			border-top: 2px dotted rgb(var(--v-theme-lightsecondarydisabled));
 		}
 	}
 
@@ -172,8 +172,8 @@ header {
 			tbody {
 				tr {
 					border: 0;
-					border-top: 2px dotted rgb(var(--v-theme-lightsecondary));
-					border-bottom: 2px dotted rgb(var(--v-theme-lightsecondary));
+					border-top: 2px dotted rgb(var(--v-theme-lightsecondarydisabled));
+					border-bottom: 2px dotted rgb(var(--v-theme-lightsecondarydisabled));
 
 					td {
 						padding: 10px 0;
@@ -199,4 +199,76 @@ input {
 	color: rgb(var(--v-theme-textmain));
 	padding: 30px 0;
 	font-size: x-large;
+}
+
+.table-content {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.table-content-width {
+	display: flex;
+	align-items: center;
+	width: 10%;
+}
+
+.table-key {
+	display: none;
+	padding: 0 5px;
+}
+
+.table-value {
+	width: 100%;
+}
+
+.table-content-note-width {
+	display: flex;
+	align-items: center;
+	width: calc(60% - 120px);
+}
+
+.table-note {
+	width: 100%;
+}
+
+.table-button {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.table-content {
+		flex-direction: column;
+	}
+
+	.table-content-width,
+	.table-content-note-width {
+		width: 100%;
+	}
+
+	.table-key {
+		display: block;
+		width: 30%;
+	}
+
+	.table-value {
+		width: 70%;
+	}
+
+	.table-delete-button {
+		display: none;
+	}
+
+	.table-note {
+		width: 70%;
+	}
+
+	.table-button {
+		display: block;
+	}
+
+	.table-header {
+		visibility: hidden;
+		// display:none;
+	}
 }

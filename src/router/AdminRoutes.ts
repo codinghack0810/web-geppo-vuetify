@@ -3,62 +3,62 @@ const AdminRoutes = {
     meta: {
         requiresAuth: true
     },
-    redirect: '/admin/home',
+    // redirect: '/admin/home',
     component: () => import('@/layouts/admin/AdminLayout.vue'),
     children: [
         {
-            name: 'Home',
-            path: '/admin/home',
+            name: 'AdminHome',
+            path: 'home',
             component: () => import('@/views/admin/home/AdminHome.vue')
         },
         {
-            name: 'WorkSchedule',
-            path: '/admin/workschedule',
+            name: 'AdminWorkSchedule',
+            path: 'workschedule',
             component: () => import('@/views/admin/workschedule/WorkSchedule.vue')
         },
         {
-            name: 'MonthlyReport',
-            path: '/admin/monthlyreport',
+            name: 'AdminMonthlyReport',
+            path: 'monthlyreport',
             component: () => import('@/views/admin/monthlyreport/MonthlyReport.vue')
             // children: [
             //   {
-            //     path: '/admin//',
+            //     path: '/',
             //     component: () => import('@/views/admin/monthlyreport/MonthlyReport.vue')
             //   },
             //   {
-            //     name: 'MonthlyReportDetail',
-            //     path: '/admin/detail',
+            //     name: 'AdminMonthlyReportDetail',
+            //     path: 'detail',
             //     component: () => import('@/views/admin/monthlyreport/MonthlyReportDetail.vue')
             //   }
             // ]
         },
         {
-            name: 'MonthlyReportDetail',
-            path: '/admin/monthlyreport/detail',
+            name: 'AdminMonthlyReportDetail',
+            path: 'monthlyreport/detail',
             component: () => import('@/views/admin/monthlyreport/MonthlyReportDetail.vue')
         },
         {
-            name: 'AttendanceList',
-            path: '/admin/attendancelist',
+            name: 'AdminAttendanceList',
+            path: 'attendancelist',
             component: () => import('@/views/admin/attendancelist/AttendanceList.vue')
         },
         {
-            name: 'EmployeeManagement',
-            path: '/admin/employeemanagement',
+            name: 'AdminEmployeeManagement',
+            path: 'employeemanagement',
             component: () => import('@/views/admin/employeemanagement/EmployeeManage.vue')
         },
         {
-            name: 'EmployeeManagementDetail',
-            path: '/admin/employeemanagement/detail',
+            name: 'AdminEmployeeManagementDetail',
+            path: 'employeemanagement/detail',
             component: () => import('@/views/admin/employeemanagement/EmployeeManageDetail.vue')
         },
         {
-            name: 'SpecialVacation',
-            path: '/admin/specialvacation',
+            name: 'AdminSpecialVacation',
+            path: 'specialvacation',
             component: () => import('@/views/admin/specialvacation/SpecialVacation.vue')
         },
         {
-            path: '/notice',
+            path: 'notice',
             component: () => import('@/views/notice/NoticeEdit.vue')
         }
     ]

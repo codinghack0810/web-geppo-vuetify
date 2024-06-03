@@ -12,7 +12,8 @@ const customizer = useCustomizerStore();
 
 const openEmployee = () => {
     customizer.SET_TITLE('個人月報');
-    router.push('/admin/monthlyreport/detail');
+    // router.push('/admin/monthlyreport/detail');
+    router.push({ name: 'AdminMonthlyReportDetail' });
 };
 </script>
 <template>
