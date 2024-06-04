@@ -126,6 +126,10 @@ header {
     color: rgb(var(--v-theme-textmain));
     border-bottom: 2px solid rgb(var(--v-theme-textmain));
 
+    .v-expansion-panel__shadow {
+        box-shadow: none;
+    }
+
     .v-expansion-panel-title {
         padding: 30px 0;
         font-size: x-large;
