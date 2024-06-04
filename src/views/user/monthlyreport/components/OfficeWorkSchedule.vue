@@ -18,7 +18,7 @@
         </v-expansion-panel-text>
     </v-expansion-panel>
 </template>
-<script setup lang="ts">
+<script setup>
 import { shallowRef } from 'vue';
 import fileListItems from '../../workschedule/components/fileListItems';
 

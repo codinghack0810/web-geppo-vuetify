@@ -1,6 +1,6 @@
-<script setup lang="ts">
+<script setup>
 import { shallowRef } from 'vue';
-import attendanceItems from './attendanceItem.ts';
+import attendanceItems from './attendanceItem.js';
 import AttendanceList from './AttendanceList.vue';
 
 const attendanceListItems = shallowRef(attendanceItems);

@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <v-expansion-panel>
         <v-expansion-panel-title>現場勤務表</v-expansion-panel-title>
         <v-expansion-panel-text>
@@ -15,10 +15,10 @@
         </v-expansion-panel-text>
     </v-expansion-panel>
 </template>
-<script setup lang="ts">
+<script setup>
 import { shallowRef } from 'vue';
 import fileListItems from '../../../user/workschedule/components/fileListItems';
 
 const fileList = shallowRef(fileListItems);
 </script>
-<style lang=""></style>
+<style></style>

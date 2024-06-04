@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { ref } from 'vue';
 import NoticeUser from './components/NoticeUser.vue';
 import AttendanceRecord from './components/AttendanceRecord.vue';
@@ -14,7 +14,7 @@ const panel = ref([0, 1, 2, 3, 4, 5, 6, 7]);
 <template>
     <v-row>
         <v-col cols="12" md="12">
-            <v-expansion-panels v-model="panel" flat multiple>
+            <v-expansion-panels v-model="panel" variant="accordion" multiple>
                 <NoticeUser />
                 <AttendanceRecord />
                 <MonthyReport />

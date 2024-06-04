@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import workScheduleItems from './components/workScheduleItems';
 
 const nowDate = new Date();

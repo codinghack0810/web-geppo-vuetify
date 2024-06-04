@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import { router } from '@/router';
 import { useCustomizerStore } from '@/stores/customizer';
 

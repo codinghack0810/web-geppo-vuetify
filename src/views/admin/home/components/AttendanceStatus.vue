@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { shallowRef } from 'vue';
 import attendanceItems from './attendanceItem';
 import AttendanceList from './AttendanceList.vue';

@@ -62,7 +62,7 @@ const panel = ref([0, 1, 2, 3, 4, 5]);
             <v-divider thickness="2 textmain-brColor"></v-divider>
         </v-col>
         <v-col cols="12">
-            <v-expansion-panels v-model="panel" flat multiple>
+            <v-expansion-panels v-model="panel" variant="accordion" multiple>
                 <ScheduledTime />
                 <OfficeWorkSchedule />
                 <WorkScheduleTime />

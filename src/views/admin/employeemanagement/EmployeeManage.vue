@@ -1,7 +1,7 @@
 <script setup>
 import { shallowRef } from 'vue';
 import EmployeeList from './components/EmployeeList.vue';
-import employeeList from './components/employeeListItem.ts';
+import employeeList from './components/employeeListItem';
 
 const employeeListItems = shallowRef(employeeList);
 </script>

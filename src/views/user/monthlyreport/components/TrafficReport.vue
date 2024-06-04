@@ -1,6 +1,6 @@
 <script setup>
 import { shallowRef } from 'vue';
-import trafficReportItems from './trafficReportItems.ts';
+import trafficReportItems from './trafficReportItems.js';
 import TrafficReportItem from './TrafficReportItem.vue';
 
 const trafficReportList = shallowRef(trafficReportItems);

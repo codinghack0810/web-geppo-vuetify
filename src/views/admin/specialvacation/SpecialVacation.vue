@@ -1,7 +1,7 @@
 <script setup>
 import { shallowRef } from 'vue';
 import SpecialVacationListItem from './component/SpecialVacationListItem.vue';
-import specialVacationList from './component/specialVacationList.ts';
+import specialVacationList from './component/specialVacationList';
 
 const specialVacationListItems = shallowRef(specialVacationList);
 </script>

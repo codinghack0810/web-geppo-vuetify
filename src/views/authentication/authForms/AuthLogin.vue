@@ -1,8 +1,8 @@
-<script setup lang="ts">
+<script setup>
 import { ref } from 'vue';
 // icons
 // import { EyeInvisibleOutlined, EyeOutlined } from '@ant-design/icons-vue';
-import { useAuthStore } from '@/stores/auth';
+import { useAuthStore } from '../../../stores/auth';
 import { Form } from 'vee-validate';
 
 // const checkbox = ref(false);
@@ -12,13 +12,13 @@ const password = ref('admin123');
 const password2 = ref('admin123');
 const username = ref('info@codedthemes.com');
 const passwordRules = ref([
-    (v: string) => !!v || 'Password is required',
-    (v: string) => (v && v.length <= 10) || 'Password must be less than 10 characters'
+    (v) => !!v || 'Password is required',
+    (v) => (v && v.length <= 10) || 'Password must be less than 10 characters'
 ]);
-const emailRules = ref([(v: string) => !!v || 'E-mail is required', (v: string) => /.+@.+\..+/.test(v) || 'E-mail must be valid']);
+const emailRules = ref([(v) => !!v || 'E-mail is required', (v) => /.+@.+\..+/.test(v) || 'E-mail must be valid']);
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
-function validate(values: any, { setErrors }: any) {
+function validate(values, { setErrors }) {
     const authStore = useAuthStore();
     return authStore.login(username.value, password.value).catch((error) => setErrors({ apiError: error }));
 }

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import { RouterView } from 'vue-router';
 import LoaderWrapper from './LoaderWrapper.vue';
 import VerticalSidebarVue from './vertical-sidebar/VerticalSidebar.vue';

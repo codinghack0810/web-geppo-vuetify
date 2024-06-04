@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import { shallowRef } from 'vue';
 import { useCustomizerStore } from '../../../stores/customizer';
 import sidebarItems from './sidebarItem';

@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import { nowMonth } from '@/utils/date.ts';
+<script setup>
+import { nowMonth } from '@/utils/date';
 const props = defineProps({ item: Number });
 </script>
 <template>

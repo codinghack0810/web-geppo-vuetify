@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import { nowYear, nowMonth } from '@/utils/date.ts';
+<script setup>
+import { nowYear, nowMonth } from '@/utils/date.js';
 
 const lastMonth = nowMonth - 1;
 </script>

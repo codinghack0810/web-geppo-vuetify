@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };

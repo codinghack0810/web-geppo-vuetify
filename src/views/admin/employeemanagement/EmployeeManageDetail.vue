@@ -9,7 +9,7 @@ const panel = ref([0, 1, 2]);
 <template>
     <v-row>
         <v-col cols="12">
-            <v-expansion-panels v-model="panel" flat multiple>
+            <v-expansion-panels v-model="panel" variant="accordion" multiple>
                 <RegistrationInfo />
                 <AttendanceStatus />
                 <VacationTotal />

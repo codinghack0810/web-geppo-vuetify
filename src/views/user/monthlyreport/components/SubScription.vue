@@ -1,6 +1,6 @@
 <script setup>
 import { shallowRef } from 'vue';
-import subScriptionItems from './subScriptionItems.ts';
+import subScriptionItems from './subScriptionItems.js';
 import SubScriptionItem from './SubScriptionItem.vue';
 
 const subScriptionList = shallowRef(subScriptionItems);

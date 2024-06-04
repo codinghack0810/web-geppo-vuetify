@@ -1,7 +1,7 @@
-<script setup lang="ts">
+<script setup>
 import monthlyReportItems from './components/monthlyReportItems';
-import { useCustomizerStore } from '@/stores/customizer';
-import { router } from '@/router';
+import { useCustomizerStore } from '../../../stores/customizer';
+import { router } from '../../../router';
 
 const nowDate = new Date();
 const nowYear = nowDate.getFullYear();

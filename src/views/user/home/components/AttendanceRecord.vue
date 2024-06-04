@@ -1,4 +1,4 @@
-<script setup lang="ts"></script>
+<script setup></script>
 <template>
     <v-expansion-panel>
         <v-expansion-panel-title>出退勤記録</v-expansion-panel-title>

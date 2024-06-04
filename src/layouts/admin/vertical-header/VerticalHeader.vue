@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import { useCustomizerStore } from '../../../stores/customizer';
 import NotificationDD from './NotificationDD.vue';
 

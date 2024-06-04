@@ -1,6 +1,6 @@
 <script setup>
 import { shallowRef } from 'vue';
-import enrollmentStatusItems from './enrollmentStatusItems.ts';
+import enrollmentStatusItems from './enrollmentStatusItems';
 
 const enrollmentStatusList = shallowRef(enrollmentStatusItems);
 </script>

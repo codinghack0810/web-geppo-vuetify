@@ -1,4 +1,4 @@
-<script setup lang="ts"></script>
+<script setup></script>
 <template>
     <v-expansion-panel>
         <v-expansion-panel-title>週報提出</v-expansion-panel-title>

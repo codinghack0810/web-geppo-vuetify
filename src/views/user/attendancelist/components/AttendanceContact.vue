@@ -1,5 +1,5 @@
 <script setup>
-import { formattedWeek } from '@/utils/date.ts';
+import { formattedWeek } from '@/utils/date.js';
 </script>
 <template lang="">
     <v-expansion-panel>

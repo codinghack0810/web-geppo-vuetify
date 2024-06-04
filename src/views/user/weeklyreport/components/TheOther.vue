@@ -1,5 +1,6 @@
 <script setup>
-const rating = 3;
+import { ref } from 'vue';
+const rating = ref(3);
 </script>
 <template>
     <v-expansion-panel>

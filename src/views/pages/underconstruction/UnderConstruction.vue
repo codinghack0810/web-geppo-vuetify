@@ -1,4 +1,4 @@
-<script setup lang="ts"></script>
+<script setup></script>
 
 <template>
     <v-row no-gutters class="bg-containerBg" style="min-height: 100vh">
