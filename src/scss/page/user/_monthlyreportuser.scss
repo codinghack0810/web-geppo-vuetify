@@ -195,3 +195,82 @@
         display: none;
     }
 }
+
+.table-content-workdate-width {
+    display: flex;
+    align-items: center;
+    width: calc(12% + 40px);
+    justify-content: space-between;
+}
+
+.table-content-worktime-width {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.worktable-value {
+    display: flex;
+    width: 100%;
+}
+
+.worktable-key {
+    display: none;
+    text-align: center;
+}
+
+.workDate {
+    width: 12%;
+}
+
+.time-group {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+}
+
+.table-content-worknote-width {
+    display: flex;
+    align-items: center;
+    width: calc(48% - 40px);
+}
+
+.worktable-note {
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .worktable-note {
+        width: calc(100% - 110px);
+    }
+
+    .workDate {
+        width: 100%;
+    }
+
+    .table-content-workdate-width {
+        width: 100%;
+    }
+
+    // .table-content-worktime-width {
+    //     width: calc(50% - 70px);
+    // }
+
+    .table-content-worknote-width {
+        width: 100%;
+    }
+
+    .worktable-key {
+        display: block;
+        width: 70px;
+    }
+
+    .time-group {
+        width: 100%;
+    }
+
+    .worktable-value {
+        width: calc(100% - 70px);
+    }
+}

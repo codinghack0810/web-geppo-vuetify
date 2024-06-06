@@ -12,13 +12,14 @@ const scheduledTime = shallowRef(scheduleTimeItems);
         <v-expansion-panel-text>
             <div class="d-flex justify-between table-header">
                 <div style="width: 40px"></div>
-                <div style="width: 12%">日付</div>
-                <div class="text-center" style="width: 40px"></div>
-                <div style="width: 10%; padding: 1px">開始時刻</div>
-                <div style="width: 10%; padding: 1px">終了時刻</div>
-                <div style="width: 10%; padding: 1px">休憩時間</div>
-                <div style="width: 8%; padding: 1px">勤務時間</div>
-                <div style="width: calc(50% - 160px); padding: 1px">備考</div>
+                <div style="width: 11%">日付</div>
+                <div style="width: 40px"></div>
+                <div style="width: 9%">開始時刻</div>
+                <div style="width: 9%">終了時刻</div>
+                <div style="width: 9%">休憩時間</div>
+                <div style="width: 9%">勤務時間</div>
+                <div style="width: calc(48% - 270px)">備考</div>
+                <div style="width: 110px"></div>
                 <div class="pa-0" style="width: 80px"></div>
             </div>
             <template v-for="(item, index) in scheduledTime" :key="index">
