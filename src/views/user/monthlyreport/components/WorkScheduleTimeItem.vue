@@ -1,6 +1,6 @@
 <template lang="">
-    <div class="d-flex justify-between">
-        <div class="disabledCell d-flex flex-column text-center" style="width: 40px; justify-content: space-between">
+    <div class="d-flex justify-space-between">
+        <div class="disabledCell d-flex flex-column text-center justify-space-between" style="width: 40px">
             {{ index + 1 }}
             <div class="borderCell table-button w-100 pa-0 border-0 ma-0">
                 <v-btn color="secondary" icon rounded="lg">

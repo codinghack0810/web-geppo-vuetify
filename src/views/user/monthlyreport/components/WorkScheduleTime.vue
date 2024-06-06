@@ -25,22 +25,26 @@ const scheduledTime = shallowRef(scheduleTimeItems);
             <template v-for="(item, index) in scheduledTime" :key="index">
                 <WorkScheduleTimeItem :item="item" :total="scheduledTime.length" :index="index" />
             </template>
-            <v-col class="px-0 mb-10">
-                <v-btn color="secondary" class="float-left" @click="scheduledTime.push({})">
-                    <v-icon icon="mdi-plus-circle" color="lightsecondary" size="large"></v-icon>
-                    追加
-                </v-btn>
-                <v-btn color="secondary" class="float-left ml-3" @click="scheduledTime.push({})">
-                    <v-icon icon="mdi-plus-circle" color="lightsecondary" size="large"></v-icon>
-                    翌日行追加
-                </v-btn>
-                <v-btn color="secondary" class="px-10 float-right">
-                    <v-icon icon="mdi-tray-arrow-down" color="lightsecondary" size="large"></v-icon>
-                    Excel出力
-                </v-btn>
-                <div class="pa-2 mr-3 float-right disabledCell">160:00</div>
-                <div class="float-right align-center pa-2">合計稼働</div>
-            </v-col>
+            <div class="px-0 my-5 work-schedule-button">
+                <div>
+                    <v-btn color="secondary" @click="scheduledTime.push({})">
+                        <v-icon icon="mdi-plus-circle" color="lightsecondary" size="large"></v-icon>
+                        追加
+                    </v-btn>
+                    <v-btn color="secondary" class="ml-3" @click="scheduledTime.push({})">
+                        <v-icon icon="mdi-plus-circle" color="lightsecondary" size="large"></v-icon>
+                        翌日行追加
+                    </v-btn>
+                </div>
+                <div>
+                    <div class="align-center pa-2">合計稼働</div>
+                    <div class="pa-2 mr-3 disabledCell">160:00</div>
+                    <v-btn color="secondary" class="px-10 float-right mobile-hidden">
+                        <v-icon icon="mdi-tray-arrow-down" color="lightsecondary" size="large"></v-icon>
+                        Excel出力
+                    </v-btn>
+                </div>
+            </div>
         </v-expansion-panel-text>
     </v-expansion-panel>
 </template>

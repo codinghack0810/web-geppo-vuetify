@@ -240,6 +240,16 @@
     width: 100%;
 }
 
+.work-schedule-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    div {
+        display: flex;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .worktable-note {
         width: calc(100% - 110px);
@@ -272,5 +282,19 @@
 
     .worktable-value {
         width: calc(100% - 70px);
+    }
+
+    .mobile-center {
+        text-align: center;
+    }
+
+    .work-schedule-button {
+        flex-direction: column;
+        gap: 20px;
+
+        div {
+            display: flex;
+            margin: auto;
+        }
     }
 }
