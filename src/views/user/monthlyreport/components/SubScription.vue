@@ -16,7 +16,7 @@ const subScriptionList = shallowRef(subScriptionItems);
                 </v-col>
             </v-row>
             <div class="py-2"></div>
-            <div class="d-flex justify-between">
+            <div class="d-flex justify-between table-header">
                 <div class="text-center" style="width: 40px"></div>
                 <div style="width: 15%">手段</div>
                 <div style="width: 25%">利用区間</div>

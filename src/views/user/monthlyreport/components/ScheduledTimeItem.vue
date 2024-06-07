@@ -1,8 +1,8 @@
 <template lang="">
-    <div class="d-flex justify-between">
-        <div class="disabledCell text-center d-flex flex-column" style="width: 40px; justify-content: space-between">
+    <div class="d-flex justify-space-between">
+        <div class="disabledCell text-center d-flex flex-column justify-space-between" style="width: 40px">
             {{ index + 1 }}
-            <div class="borderCell table-button pa-0 border-0 ma-0" style="width: 100%">
+            <div class="borderCell table-button pa-0 border-0 ma-0 w-100">
                 <v-btn color="secondary" v-if="index === total - 1" icon rounded="lg">
                     <v-icon color="lightsecondary" icon="mdi-delete-forever"></v-icon>
                 </v-btn>
