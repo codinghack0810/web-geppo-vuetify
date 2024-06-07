@@ -16,13 +16,13 @@ const trafficReportList = shallowRef(trafficReportItems);
                 </v-col>
             </v-row>
             <div class="py-2"></div>
-            <div class="d-flex justify-between">
-                <div class="text-center" style="width: 44px"></div>
-                <div style="width: calc(15% + 42px)">利用日</div>
-                <div style="width: calc(10% + 2px)">行先</div>
-                <div style="width: calc(10% + 2px)">交通手段</div>
-                <div style="width: calc(10% + 2px)">発地</div>
-                <div style="width: calc(17% + 2px)">着地</div>
+            <div class="d-flex justify-between table-header">
+                <div class="text-center" style="width: 40px"></div>
+                <div style="width: calc(15% + 40px)">利用日</div>
+                <div style="width: calc(10% + 0px)">行先</div>
+                <div style="width: calc(9% + 0px)">交通手段</div>
+                <div style="width: calc(13% + 0px)">発地</div>
+                <div style="width: calc(12% + 0px)">着地</div>
                 <div>金額</div>
             </div>
             <template v-for="(item, index) in trafficReportList" :key="index">

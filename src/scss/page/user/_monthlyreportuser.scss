@@ -343,3 +343,67 @@
         width: calc(100% - 70px);
     }
 }
+
+.traffictable-date-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(15% + 40px);
+}
+
+.traffictable-key {
+    display: none;
+    width: 70px;
+    text-align: center;
+}
+
+.traffictable-value {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.traffictable-combobox-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.traffictable-combobox-value {
+    width: 100%;
+}
+
+.traffictable-cost-group {
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.traffictable-cost-value {
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .traffictable-date-content,
+    .traffictable-combobox-group {
+        width: 100%;
+    }
+
+    .traffictable-key {
+        display: block;
+    }
+
+    .traffictable-value,
+    .traffictable-combobox-value,
+    .traffictable-cost-value {
+        width: calc(100% - 70px);
+    }
+
+    .traffictable-cost-group {
+        width: 100%;
+    }
+}

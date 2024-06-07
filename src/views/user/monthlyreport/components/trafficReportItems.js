@@ -14,7 +14,7 @@ const trafficReportItems = [
         trafficMethod: 'バス',
         from: '東新宿',
         to: '秋葉原',
-        round: true,
+        round: false,
         cost: '1250'
     },
     {
@@ -23,7 +23,7 @@ const trafficReportItems = [
         trafficMethod: '他',
         from: '東京',
         to: '６文字の駅名',
-        round: false,
+        round: true,
         cost: '12520'
     },
     {
