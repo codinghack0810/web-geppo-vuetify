@@ -27,16 +27,26 @@ const subScriptionList = shallowRef(subScriptionItems);
                 <SubScriptionItem :item="item" :index="index" />
             </template>
             <div class="py-2"></div>
-            <v-btn color="secondary">
-                <v-icon icon="mdi-plus-circle" color="lightsecondary" size="large"></v-icon>
-                追加
-            </v-btn>
-            <div class="pa-2 mr-3 float-right disabledCell">16000</div>
-            <div class="float-right align-center pa-2">合計稼働</div>
-            <v-btn color="secondary" class="float-right px-10">
-                <v-icon icon="mdi-checkbox-multiple-blank-outline" color="lightsecondary" size="large"></v-icon>
-                前月をコピー
-            </v-btn>
+            <div class="px-0 my-5 work-schedule-button">
+                <div>
+                    <v-btn color="secondary" @click="scheduledTime.push({})">
+                        <v-icon icon="mdi-plus-circle" color="lightsecondary" size="large"></v-icon>
+                        追加
+                    </v-btn>
+                    <v-btn color="secondary" class="ml-3">
+                        <v-icon icon="mdi-checkbox-multiple-blank-outline" color="lightsecondary" size="large"></v-icon>
+                        前月をコピー
+                    </v-btn>
+                </div>
+                <div>
+                    <div class="align-center pa-2">合計稼働</div>
+                    <div class="pa-2 mr-3 disabledCell">16000</div>
+                    <v-btn color="secondary" class="px-10 float-right mobile-hidden">
+                        <v-icon icon="mdi-tray-arrow-down" color="lightsecondary" size="large"></v-icon>
+                        Excel出力
+                    </v-btn>
+                </div>
+            </div>
         </v-expansion-panel-text>
     </v-expansion-panel>
 </template>
